@@ -16,7 +16,7 @@ spec:
         api: external
     spec:
       containers:
-      - image: lashie/udagram-frontend:v1
+      - image: lashie/udagram-frontend
         name: udagram-frontend
         imagePullPolicy: Always
         ports:
