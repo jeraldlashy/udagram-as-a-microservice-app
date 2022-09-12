@@ -1,0 +1,925 @@
+2022-09-12T15:30:51.7073901Z Requested labels: ubuntu-latest
+2022-09-12T15:30:51.7073951Z Job defined at: jeraldlashy/udagram-as-a-microservice-app/.github/workflows/docker-image.yml@refs/heads/main
+2022-09-12T15:30:51.7073968Z Waiting for a runner to pick up this job...
+2022-09-12T15:30:52.2672898Z Job is waiting for a hosted runner to come online.
+2022-09-12T15:30:56.0718859Z Job is about to start running on the hosted runner: Hosted Agent (hosted)
+2022-09-12T15:30:59.0028054Z Current runner version: '2.296.1'
+2022-09-12T15:30:59.0069256Z ##[group]Operating System
+2022-09-12T15:30:59.0070000Z Ubuntu
+2022-09-12T15:30:59.0070295Z 20.04.5
+2022-09-12T15:30:59.0070730Z LTS
+2022-09-12T15:30:59.0071082Z ##[endgroup]
+2022-09-12T15:30:59.0071479Z ##[group]Runner Image
+2022-09-12T15:30:59.0071903Z Image: ubuntu-20.04
+2022-09-12T15:30:59.0072493Z Version: 20220905.1
+2022-09-12T15:30:59.0073011Z Included Software: https://github.com/actions/runner-images/blob/ubuntu20/20220905.1/images/linux/Ubuntu2004-Readme.md
+2022-09-12T15:30:59.0073713Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu20%2F20220905.1
+2022-09-12T15:30:59.0074196Z ##[endgroup]
+2022-09-12T15:30:59.0074740Z ##[group]Runner Image Provisioner
+2022-09-12T15:30:59.0075156Z 1.0.0.0-main-20220825-1
+2022-09-12T15:30:59.0075561Z ##[endgroup]
+2022-09-12T15:30:59.0076619Z ##[group]GITHUB_TOKEN Permissions
+2022-09-12T15:30:59.0077508Z Actions: write
+2022-09-12T15:30:59.0078075Z Checks: write
+2022-09-12T15:30:59.0078655Z Contents: write
+2022-09-12T15:30:59.0079900Z Deployments: write
+2022-09-12T15:30:59.0080366Z Discussions: write
+2022-09-12T15:30:59.0080711Z Issues: write
+2022-09-12T15:30:59.0081079Z Metadata: read
+2022-09-12T15:30:59.0081489Z Packages: write
+2022-09-12T15:30:59.0081907Z Pages: write
+2022-09-12T15:30:59.0082306Z PullRequests: write
+2022-09-12T15:30:59.0082718Z RepositoryProjects: write
+2022-09-12T15:30:59.0083094Z SecurityEvents: write
+2022-09-12T15:30:59.0083520Z Statuses: write
+2022-09-12T15:30:59.0083934Z ##[endgroup]
+2022-09-12T15:30:59.0088697Z Secret source: Actions
+2022-09-12T15:30:59.0089333Z Prepare workflow directory
+2022-09-12T15:30:59.1125089Z Prepare all required actions
+2022-09-12T15:30:59.1370549Z Getting action download info
+2022-09-12T15:30:59.4213194Z Download action repository 'actions/checkout@v3' (SHA:2541b1294d2704b0964813337f33b291d3f8596b)
+2022-09-12T15:31:00.9317072Z ##[group]Run actions/checkout@v3
+2022-09-12T15:31:00.9317496Z with:
+2022-09-12T15:31:00.9317833Z   repository: jeraldlashy/udagram-as-a-microservice-app
+2022-09-12T15:31:00.9318437Z   token: ***
+2022-09-12T15:31:00.9318697Z   ssh-strict: true
+2022-09-12T15:31:00.9318976Z   persist-credentials: true
+2022-09-12T15:31:00.9319245Z   clean: true
+2022-09-12T15:31:00.9319486Z   fetch-depth: 1
+2022-09-12T15:31:00.9320147Z   lfs: false
+2022-09-12T15:31:00.9320540Z   submodules: false
+2022-09-12T15:31:00.9320815Z   set-safe-directory: true
+2022-09-12T15:31:00.9321098Z ##[endgroup]
+2022-09-12T15:31:01.2943157Z Syncing repository: jeraldlashy/udagram-as-a-microservice-app
+2022-09-12T15:31:01.2945854Z ##[group]Getting Git version info
+2022-09-12T15:31:01.2947440Z Working directory is '/home/runner/work/udagram-as-a-microservice-app/udagram-as-a-microservice-app'
+2022-09-12T15:31:01.2948181Z [command]/usr/bin/git version
+2022-09-12T15:31:01.3117030Z git version 2.37.3
+2022-09-12T15:31:01.3145001Z ##[endgroup]
+2022-09-12T15:31:01.3167886Z Temporarily overriding HOME='/home/runner/work/_temp/5f05275f-ee0e-45c9-a615-77b7501934ff' before making global git config changes
+2022-09-12T15:31:01.3169009Z Adding repository directory to the temporary git global config as a safe directory
+2022-09-12T15:31:01.3174597Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/udagram-as-a-microservice-app/udagram-as-a-microservice-app
+2022-09-12T15:31:01.3233794Z Deleting the contents of '/home/runner/work/udagram-as-a-microservice-app/udagram-as-a-microservice-app'
+2022-09-12T15:31:01.3237855Z ##[group]Initializing the repository
+2022-09-12T15:31:01.3243401Z [command]/usr/bin/git init /home/runner/work/udagram-as-a-microservice-app/udagram-as-a-microservice-app
+2022-09-12T15:31:01.3332872Z hint: Using 'master' as the name for the initial branch. This default branch name
+2022-09-12T15:31:01.3334342Z hint: is subject to change. To configure the initial branch name to use in all
+2022-09-12T15:31:01.3335850Z hint: of your new repositories, which will suppress this warning, call:
+2022-09-12T15:31:01.3336365Z hint:
+2022-09-12T15:31:01.3337317Z hint: 	git config --global init.defaultBranch <name>
+2022-09-12T15:31:01.3337830Z hint:
+2022-09-12T15:31:01.3338903Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2022-09-12T15:31:01.3339638Z hint: 'development'. The just-created branch can be renamed via this command:
+2022-09-12T15:31:01.3340128Z hint:
+2022-09-12T15:31:01.3340920Z hint: 	git branch -m <name>
+2022-09-12T15:31:01.3392339Z Initialized empty Git repository in /home/runner/work/udagram-as-a-microservice-app/udagram-as-a-microservice-app/.git/
+2022-09-12T15:31:01.3393168Z [command]/usr/bin/git remote add origin https://github.com/jeraldlashy/udagram-as-a-microservice-app
+2022-09-12T15:31:01.3425714Z ##[endgroup]
+2022-09-12T15:31:01.3426231Z ##[group]Disabling automatic garbage collection
+2022-09-12T15:31:01.3430783Z [command]/usr/bin/git config --local gc.auto 0
+2022-09-12T15:31:01.3466551Z ##[endgroup]
+2022-09-12T15:31:01.3467472Z ##[group]Setting up auth
+2022-09-12T15:31:01.3476330Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2022-09-12T15:31:01.3517504Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :
+2022-09-12T15:31:01.4040622Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2022-09-12T15:31:01.4091179Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :
+2022-09-12T15:31:01.4374340Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2022-09-12T15:31:01.4415350Z ##[endgroup]
+2022-09-12T15:31:01.4416138Z ##[group]Fetching the repository
+2022-09-12T15:31:01.4430012Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +4db4dda5853babdc37dec9fff7580ec371509115:refs/remotes/origin/main
+2022-09-12T15:31:02.1044062Z remote: Enumerating objects: 177, done.
+2022-09-12T15:31:02.1049999Z remote: Counting objects:   0% (1/177)
+2022-09-12T15:31:02.1051102Z remote: Counting objects:   1% (2/177)
+2022-09-12T15:31:02.1051716Z remote: Counting objects:   2% (4/177)
+2022-09-12T15:31:02.1052552Z remote: Counting objects:   3% (6/177)
+2022-09-12T15:31:02.1053204Z remote: Counting objects:   4% (8/177)
+2022-09-12T15:31:02.1054021Z remote: Counting objects:   5% (9/177)
+2022-09-12T15:31:02.1060335Z remote: Counting objects:   6% (11/177)
+2022-09-12T15:31:02.1062454Z remote: Counting objects:   7% (13/177)
+2022-09-12T15:31:02.1062781Z remote: Counting objects:   8% (15/177)
+2022-09-12T15:31:02.1063113Z remote: Counting objects:   9% (16/177)
+2022-09-12T15:31:02.1063409Z remote: Counting objects:  10% (18/177)
+2022-09-12T15:31:02.1063714Z remote: Counting objects:  11% (20/177)
+2022-09-12T15:31:02.1064027Z remote: Counting objects:  12% (22/177)
+2022-09-12T15:31:02.1064329Z remote: Counting objects:  13% (24/177)
+2022-09-12T15:31:02.1064633Z remote: Counting objects:  14% (25/177)
+2022-09-12T15:31:02.1064935Z remote: Counting objects:  15% (27/177)
+2022-09-12T15:31:02.1065219Z remote: Counting objects:  16% (29/177)
+2022-09-12T15:31:02.1065518Z remote: Counting objects:  17% (31/177)
+2022-09-12T15:31:02.1065816Z remote: Counting objects:  18% (32/177)
+2022-09-12T15:31:02.1066117Z remote: Counting objects:  19% (34/177)
+2022-09-12T15:31:02.1066417Z remote: Counting objects:  20% (36/177)
+2022-09-12T15:31:02.1067243Z remote: Counting objects:  21% (38/177)
+2022-09-12T15:31:02.1067548Z remote: Counting objects:  22% (39/177)
+2022-09-12T15:31:02.1067843Z remote: Counting objects:  23% (41/177)
+2022-09-12T15:31:02.1068161Z remote: Counting objects:  24% (43/177)
+2022-09-12T15:31:02.1069023Z remote: Counting objects:  25% (45/177)
+2022-09-12T15:31:02.1069327Z remote: Counting objects:  26% (47/177)
+2022-09-12T15:31:02.1069625Z remote: Counting objects:  27% (48/177)
+2022-09-12T15:31:02.1069922Z remote: Counting objects:  28% (50/177)
+2022-09-12T15:31:02.1070213Z remote: Counting objects:  29% (52/177)
+2022-09-12T15:31:02.1070514Z remote: Counting objects:  30% (54/177)
+2022-09-12T15:31:02.1070812Z remote: Counting objects:  31% (55/177)
+2022-09-12T15:31:02.1071111Z remote: Counting objects:  32% (57/177)
+2022-09-12T15:31:02.1071409Z remote: Counting objects:  33% (59/177)
+2022-09-12T15:31:02.1071704Z remote: Counting objects:  34% (61/177)
+2022-09-12T15:31:02.1071987Z remote: Counting objects:  35% (62/177)
+2022-09-12T15:31:02.1072290Z remote: Counting objects:  36% (64/177)
+2022-09-12T15:31:02.1072590Z remote: Counting objects:  37% (66/177)
+2022-09-12T15:31:02.1072894Z remote: Counting objects:  38% (68/177)
+2022-09-12T15:31:02.1073192Z remote: Counting objects:  39% (70/177)
+2022-09-12T15:31:02.1073485Z remote: Counting objects:  40% (71/177)
+2022-09-12T15:31:02.1073772Z remote: Counting objects:  41% (73/177)
+2022-09-12T15:31:02.1074069Z remote: Counting objects:  42% (75/177)
+2022-09-12T15:31:02.1074366Z remote: Counting objects:  43% (77/177)
+2022-09-12T15:31:02.1074663Z remote: Counting objects:  44% (78/177)
+2022-09-12T15:31:02.1075565Z remote: Counting objects:  45% (80/177)
+2022-09-12T15:31:02.1075910Z remote: Counting objects:  46% (82/177)
+2022-09-12T15:31:02.1076212Z remote: Counting objects:  47% (84/177)
+2022-09-12T15:31:02.1076517Z remote: Counting objects:  48% (85/177)
+2022-09-12T15:31:02.1077060Z remote: Counting objects:  49% (87/177)
+2022-09-12T15:31:02.1077397Z remote: Counting objects:  50% (89/177)
+2022-09-12T15:31:02.1077705Z remote: Counting objects:  51% (91/177)
+2022-09-12T15:31:02.1078017Z remote: Counting objects:  52% (93/177)
+2022-09-12T15:31:02.1078312Z remote: Counting objects:  53% (94/177)
+2022-09-12T15:31:02.1078613Z remote: Counting objects:  54% (96/177)
+2022-09-12T15:31:02.1078913Z remote: Counting objects:  55% (98/177)
+2022-09-12T15:31:02.1079221Z remote: Counting objects:  56% (100/177)
+2022-09-12T15:31:02.1079535Z remote: Counting objects:  57% (101/177)
+2022-09-12T15:31:02.1079851Z remote: Counting objects:  58% (103/177)
+2022-09-12T15:31:02.1080149Z remote: Counting objects:  59% (105/177)
+2022-09-12T15:31:02.1080452Z remote: Counting objects:  60% (107/177)
+2022-09-12T15:31:02.1080949Z remote: Counting objects:  61% (108/177)
+2022-09-12T15:31:02.1081478Z remote: Counting objects:  62% (110/177)
+2022-09-12T15:31:02.1081808Z remote: Counting objects:  63% (112/177)
+2022-09-12T15:31:02.1082109Z remote: Counting objects:  64% (114/177)
+2022-09-12T15:31:02.1082610Z remote: Counting objects:  65% (116/177)
+2022-09-12T15:31:02.1082919Z remote: Counting objects:  66% (117/177)
+2022-09-12T15:31:02.1083213Z remote: Counting objects:  67% (119/177)
+2022-09-12T15:31:02.1083517Z remote: Counting objects:  68% (121/177)
+2022-09-12T15:31:02.1083815Z remote: Counting objects:  69% (123/177)
+2022-09-12T15:31:02.1084119Z remote: Counting objects:  70% (124/177)
+2022-09-12T15:31:02.1084423Z remote: Counting objects:  71% (126/177)
+2022-09-12T15:31:02.1084724Z remote: Counting objects:  72% (128/177)
+2022-09-12T15:31:02.1085010Z remote: Counting objects:  73% (130/177)
+2022-09-12T15:31:02.1085307Z remote: Counting objects:  74% (131/177)
+2022-09-12T15:31:02.1085613Z remote: Counting objects:  75% (133/177)
+2022-09-12T15:31:02.1085916Z remote: Counting objects:  76% (135/177)
+2022-09-12T15:31:02.1086217Z remote: Counting objects:  77% (137/177)
+2022-09-12T15:31:02.1086673Z remote: Counting objects:  78% (139/177)
+2022-09-12T15:31:02.1086961Z remote: Counting objects:  79% (140/177)
+2022-09-12T15:31:02.1087261Z remote: Counting objects:  80% (142/177)
+2022-09-12T15:31:02.1087563Z remote: Counting objects:  81% (144/177)
+2022-09-12T15:31:02.1087867Z remote: Counting objects:  82% (146/177)
+2022-09-12T15:31:02.1088165Z remote: Counting objects:  83% (147/177)
+2022-09-12T15:31:02.1088466Z remote: Counting objects:  84% (149/177)
+2022-09-12T15:31:02.1088753Z remote: Counting objects:  85% (151/177)
+2022-09-12T15:31:02.1089051Z remote: Counting objects:  86% (153/177)
+2022-09-12T15:31:02.1089351Z remote: Counting objects:  87% (154/177)
+2022-09-12T15:31:02.1089651Z remote: Counting objects:  88% (156/177)
+2022-09-12T15:31:02.1089955Z remote: Counting objects:  89% (158/177)
+2022-09-12T15:31:02.1090257Z remote: Counting objects:  90% (160/177)
+2022-09-12T15:31:02.1090550Z remote: Counting objects:  91% (162/177)
+2022-09-12T15:31:02.1090848Z remote: Counting objects:  92% (163/177)
+2022-09-12T15:31:02.1091146Z remote: Counting objects:  93% (165/177)
+2022-09-12T15:31:02.1091445Z remote: Counting objects:  94% (167/177)
+2022-09-12T15:31:02.1091743Z remote: Counting objects:  95% (169/177)
+2022-09-12T15:31:02.1092043Z remote: Counting objects:  96% (170/177)
+2022-09-12T15:31:02.1092327Z remote: Counting objects:  97% (172/177)
+2022-09-12T15:31:02.1092623Z remote: Counting objects:  98% (174/177)
+2022-09-12T15:31:02.1092930Z remote: Counting objects:  99% (176/177)
+2022-09-12T15:31:02.1093238Z remote: Counting objects: 100% (177/177)
+2022-09-12T15:31:02.1093560Z remote: Counting objects: 100% (177/177), done.
+2022-09-12T15:31:02.1093989Z remote: Compressing objects:   0% (1/135)
+2022-09-12T15:31:02.1094324Z remote: Compressing objects:   1% (2/135)
+2022-09-12T15:31:02.1094646Z remote: Compressing objects:   2% (3/135)
+2022-09-12T15:31:02.1094971Z remote: Compressing objects:   3% (5/135)
+2022-09-12T15:31:02.1095286Z remote: Compressing objects:   4% (6/135)
+2022-09-12T15:31:02.1095605Z remote: Compressing objects:   5% (7/135)
+2022-09-12T15:31:02.1095921Z remote: Compressing objects:   6% (9/135)
+2022-09-12T15:31:02.1096231Z remote: Compressing objects:   7% (10/135)
+2022-09-12T15:31:02.1096558Z remote: Compressing objects:   8% (11/135)
+2022-09-12T15:31:02.1096885Z remote: Compressing objects:   9% (13/135)
+2022-09-12T15:31:02.1097206Z remote: Compressing objects:  10% (14/135)
+2022-09-12T15:31:02.1097523Z remote: Compressing objects:  11% (15/135)
+2022-09-12T15:31:02.1097840Z remote: Compressing objects:  12% (17/135)
+2022-09-12T15:31:02.1098148Z remote: Compressing objects:  13% (18/135)
+2022-09-12T15:31:02.1098474Z remote: Compressing objects:  14% (19/135)
+2022-09-12T15:31:02.1098801Z remote: Compressing objects:  15% (21/135)
+2022-09-12T15:31:02.1099121Z remote: Compressing objects:  16% (22/135)
+2022-09-12T15:31:02.1099436Z remote: Compressing objects:  17% (23/135)
+2022-09-12T15:31:02.1099756Z remote: Compressing objects:  18% (25/135)
+2022-09-12T15:31:02.1100057Z remote: Compressing objects:  19% (26/135)
+2022-09-12T15:31:02.1100374Z remote: Compressing objects:  20% (27/135)
+2022-09-12T15:31:02.1100693Z remote: Compressing objects:  21% (29/135)
+2022-09-12T15:31:02.1101013Z remote: Compressing objects:  22% (30/135)
+2022-09-12T15:31:02.1101330Z remote: Compressing objects:  23% (32/135)
+2022-09-12T15:31:02.1101647Z remote: Compressing objects:  24% (33/135)
+2022-09-12T15:31:02.1101950Z remote: Compressing objects:  25% (34/135)
+2022-09-12T15:31:02.1102267Z remote: Compressing objects:  26% (36/135)
+2022-09-12T15:31:02.1102586Z remote: Compressing objects:  27% (37/135)
+2022-09-12T15:31:02.1103005Z remote: Compressing objects:  28% (38/135)
+2022-09-12T15:31:02.1103324Z remote: Compressing objects:  29% (40/135)
+2022-09-12T15:31:02.1103646Z remote: Compressing objects:  30% (41/135)
+2022-09-12T15:31:02.1103964Z remote: Compressing objects:  31% (42/135)
+2022-09-12T15:31:02.1104271Z remote: Compressing objects:  32% (44/135)
+2022-09-12T15:31:02.1104588Z remote: Compressing objects:  33% (45/135)
+2022-09-12T15:31:02.1104908Z remote: Compressing objects:  34% (46/135)
+2022-09-12T15:31:02.1105225Z remote: Compressing objects:  35% (48/135)
+2022-09-12T15:31:02.1105543Z remote: Compressing objects:  36% (49/135)
+2022-09-12T15:31:02.1105901Z remote: Compressing objects:  37% (50/135)
+2022-09-12T15:31:02.1106218Z remote: Compressing objects:  38% (52/135)
+2022-09-12T15:31:02.1106538Z remote: Compressing objects:  39% (53/135)
+2022-09-12T15:31:02.1106857Z remote: Compressing objects:  40% (54/135)
+2022-09-12T15:31:02.1107181Z remote: Compressing objects:  41% (56/135)
+2022-09-12T15:31:02.1107497Z remote: Compressing objects:  42% (57/135)
+2022-09-12T15:31:02.1107812Z remote: Compressing objects:  43% (59/135)
+2022-09-12T15:31:02.1108115Z remote: Compressing objects:  44% (60/135)
+2022-09-12T15:31:02.1108431Z remote: Compressing objects:  45% (61/135)
+2022-09-12T15:31:02.1109107Z remote: Compressing objects:  46% (63/135)
+2022-09-12T15:31:02.1109455Z remote: Compressing objects:  47% (64/135)
+2022-09-12T15:31:02.1109774Z remote: Compressing objects:  48% (65/135)
+2022-09-12T15:31:02.1110091Z remote: Compressing objects:  49% (67/135)
+2022-09-12T15:31:02.1110394Z remote: Compressing objects:  50% (68/135)
+2022-09-12T15:31:02.1110855Z remote: Compressing objects:  51% (69/135)
+2022-09-12T15:31:02.1111196Z remote: Compressing objects:  52% (71/135)
+2022-09-12T15:31:02.1111521Z remote: Compressing objects:  53% (72/135)
+2022-09-12T15:31:02.1111842Z remote: Compressing objects:  54% (73/135)
+2022-09-12T15:31:02.1112162Z remote: Compressing objects:  55% (75/135)
+2022-09-12T15:31:02.1112464Z remote: Compressing objects:  56% (76/135)
+2022-09-12T15:31:02.1112783Z remote: Compressing objects:  57% (77/135)
+2022-09-12T15:31:02.1113100Z remote: Compressing objects:  58% (79/135)
+2022-09-12T15:31:02.1113417Z remote: Compressing objects:  59% (80/135)
+2022-09-12T15:31:02.1113733Z remote: Compressing objects:  60% (81/135)
+2022-09-12T15:31:02.1114049Z remote: Compressing objects:  61% (83/135)
+2022-09-12T15:31:02.1114349Z remote: Compressing objects:  62% (84/135)
+2022-09-12T15:31:02.1115418Z remote: Compressing objects:  63% (86/135)
+2022-09-12T15:31:02.1116713Z remote: Compressing objects:  64% (87/135)
+2022-09-12T15:31:02.1117251Z remote: Compressing objects:  65% (88/135)
+2022-09-12T15:31:02.1117777Z remote: Compressing objects:  66% (90/135)
+2022-09-12T15:31:02.1118657Z remote: Compressing objects:  67% (91/135)
+2022-09-12T15:31:02.1119323Z remote: Compressing objects:  68% (92/135)
+2022-09-12T15:31:02.1120119Z remote: Compressing objects:  69% (94/135)
+2022-09-12T15:31:02.1120779Z remote: Compressing objects:  70% (95/135)
+2022-09-12T15:31:02.1121542Z remote: Compressing objects:  71% (96/135)
+2022-09-12T15:31:02.1122167Z remote: Compressing objects:  72% (98/135)
+2022-09-12T15:31:02.1122933Z remote: Compressing objects:  73% (99/135)
+2022-09-12T15:31:02.1123629Z remote: Compressing objects:  74% (100/135)
+2022-09-12T15:31:02.1124313Z remote: Compressing objects:  75% (102/135)
+2022-09-12T15:31:02.1124993Z remote: Compressing objects:  76% (103/135)
+2022-09-12T15:31:02.1125617Z remote: Compressing objects:  77% (104/135)
+2022-09-12T15:31:02.1126375Z remote: Compressing objects:  78% (106/135)
+2022-09-12T15:31:02.1127221Z remote: Compressing objects:  79% (107/135)
+2022-09-12T15:31:02.1127858Z remote: Compressing objects:  80% (108/135)
+2022-09-12T15:31:02.1128474Z remote: Compressing objects:  81% (110/135)
+2022-09-12T15:31:02.1129212Z remote: Compressing objects:  82% (111/135)
+2022-09-12T15:31:02.1129865Z remote: Compressing objects:  83% (113/135)
+2022-09-12T15:31:02.1130468Z remote: Compressing objects:  84% (114/135)
+2022-09-12T15:31:02.1131160Z remote: Compressing objects:  85% (115/135)
+2022-09-12T15:31:02.1131755Z remote: Compressing objects:  86% (117/135)
+2022-09-12T15:31:02.1132774Z remote: Compressing objects:  87% (118/135)
+2022-09-12T15:31:02.1133439Z remote: Compressing objects:  88% (119/135)
+2022-09-12T15:31:02.1134099Z remote: Compressing objects:  89% (121/135)
+2022-09-12T15:31:02.1134696Z remote: Compressing objects:  90% (122/135)
+2022-09-12T15:31:02.1135620Z remote: Compressing objects:  91% (123/135)
+2022-09-12T15:31:02.1136214Z remote: Compressing objects:  92% (125/135)
+2022-09-12T15:31:02.1136853Z remote: Compressing objects:  93% (126/135)
+2022-09-12T15:31:02.1137525Z remote: Compressing objects:  94% (127/135)
+2022-09-12T15:31:02.1138114Z remote: Compressing objects:  95% (129/135)
+2022-09-12T15:31:02.1138760Z remote: Compressing objects:  96% (130/135)
+2022-09-12T15:31:02.1139431Z remote: Compressing objects:  97% (131/135)
+2022-09-12T15:31:02.1140180Z remote: Compressing objects:  98% (133/135)
+2022-09-12T15:31:02.1140700Z remote: Compressing objects:  99% (134/135)
+2022-09-12T15:31:02.1141444Z remote: Compressing objects: 100% (135/135)
+2022-09-12T15:31:02.1142147Z remote: Compressing objects: 100% (135/135), done.
+2022-09-12T15:31:02.1744174Z Receiving objects:   0% (1/177)
+2022-09-12T15:31:02.1744744Z Receiving objects:   1% (2/177)
+2022-09-12T15:31:02.1745259Z Receiving objects:   2% (4/177)
+2022-09-12T15:31:02.1746325Z Receiving objects:   3% (6/177)
+2022-09-12T15:31:02.1746792Z Receiving objects:   4% (8/177)
+2022-09-12T15:31:02.1747563Z Receiving objects:   5% (9/177)
+2022-09-12T15:31:02.1792314Z Receiving objects:   6% (11/177)
+2022-09-12T15:31:02.1798684Z Receiving objects:   7% (13/177)
+2022-09-12T15:31:02.1799286Z Receiving objects:   8% (15/177)
+2022-09-12T15:31:02.1801990Z Receiving objects:   9% (16/177)
+2022-09-12T15:31:02.1803074Z Receiving objects:  10% (18/177)
+2022-09-12T15:31:02.1803548Z Receiving objects:  11% (20/177)
+2022-09-12T15:31:02.1804520Z Receiving objects:  12% (22/177)
+2022-09-12T15:31:02.1805512Z Receiving objects:  13% (24/177)
+2022-09-12T15:31:02.1806145Z Receiving objects:  14% (25/177)
+2022-09-12T15:31:02.1807015Z Receiving objects:  15% (27/177)
+2022-09-12T15:31:02.7183220Z Receiving objects:  16% (29/177)
+2022-09-12T15:31:02.7362587Z Receiving objects:  17% (31/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7440216Z Receiving objects:  18% (32/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7440995Z remote: Total 177 (delta 25), reused 175 (delta 25), pack-reused 0
+2022-09-12T15:31:02.7448305Z Receiving objects:  19% (34/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7448779Z Receiving objects:  20% (36/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7449303Z Receiving objects:  21% (38/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7450111Z Receiving objects:  22% (39/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7450508Z Receiving objects:  23% (41/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7450905Z Receiving objects:  24% (43/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7451377Z Receiving objects:  25% (45/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7451732Z Receiving objects:  26% (47/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7452138Z Receiving objects:  27% (48/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7452530Z Receiving objects:  28% (50/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7452959Z Receiving objects:  29% (52/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7453649Z Receiving objects:  30% (54/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7454038Z Receiving objects:  31% (55/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7454878Z Receiving objects:  32% (57/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7455315Z Receiving objects:  33% (59/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7456123Z Receiving objects:  34% (61/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7456525Z Receiving objects:  35% (62/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7456908Z Receiving objects:  36% (64/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7457707Z Receiving objects:  37% (66/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7458810Z Receiving objects:  38% (68/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7459202Z Receiving objects:  39% (70/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7461462Z Receiving objects:  40% (71/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7463044Z Receiving objects:  41% (73/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7464266Z Receiving objects:  42% (75/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7465496Z Receiving objects:  43% (77/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7466671Z Receiving objects:  44% (78/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7467764Z Receiving objects:  45% (80/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7469510Z Receiving objects:  46% (82/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7470892Z Receiving objects:  47% (84/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7472591Z Receiving objects:  48% (85/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7473785Z Receiving objects:  49% (87/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7475245Z Receiving objects:  50% (89/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7476940Z Receiving objects:  51% (91/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7478043Z Receiving objects:  52% (93/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7479163Z Receiving objects:  53% (94/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7480753Z Receiving objects:  54% (96/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7481916Z Receiving objects:  55% (98/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7482920Z Receiving objects:  56% (100/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7483984Z Receiving objects:  57% (101/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7485021Z Receiving objects:  58% (103/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7486307Z Receiving objects:  59% (105/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7487534Z Receiving objects:  60% (107/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7488672Z Receiving objects:  61% (108/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7489845Z Receiving objects:  62% (110/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7491079Z Receiving objects:  63% (112/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7492226Z Receiving objects:  64% (114/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7493649Z Receiving objects:  65% (116/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7494781Z Receiving objects:  66% (117/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7496164Z Receiving objects:  67% (119/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7497227Z Receiving objects:  68% (121/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7498268Z Receiving objects:  69% (123/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7499617Z Receiving objects:  70% (124/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7501349Z Receiving objects:  71% (126/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7502105Z Receiving objects:  72% (128/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7503149Z Receiving objects:  73% (130/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7504597Z Receiving objects:  74% (131/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7505697Z Receiving objects:  75% (133/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7507054Z Receiving objects:  76% (135/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7508390Z Receiving objects:  77% (137/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7509656Z Receiving objects:  78% (139/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7510734Z Receiving objects:  79% (140/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7511922Z Receiving objects:  80% (142/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7512986Z Receiving objects:  81% (144/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7513950Z Receiving objects:  82% (146/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7515062Z Receiving objects:  83% (147/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7516326Z Receiving objects:  84% (149/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7517452Z Receiving objects:  85% (151/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7518827Z Receiving objects:  86% (153/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7519987Z Receiving objects:  87% (154/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7521267Z Receiving objects:  88% (156/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7522447Z Receiving objects:  89% (158/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7523676Z Receiving objects:  90% (160/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7525008Z Receiving objects:  91% (162/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7526239Z Receiving objects:  92% (163/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7530342Z Receiving objects:  93% (165/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7533980Z Receiving objects:  94% (167/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7536005Z Receiving objects:  95% (169/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7537388Z Receiving objects:  96% (170/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7538550Z Receiving objects:  97% (172/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7539684Z Receiving objects:  98% (174/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7541238Z Receiving objects:  99% (176/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7542103Z Receiving objects: 100% (177/177), 3.39 MiB | 6.43 MiB/s
+2022-09-12T15:31:02.7542480Z Receiving objects: 100% (177/177), 5.31 MiB | 9.14 MiB/s, done.
+2022-09-12T15:31:02.7547456Z Resolving deltas:   0% (0/25)
+2022-09-12T15:31:02.7547821Z Resolving deltas:   4% (1/25)
+2022-09-12T15:31:02.7548163Z Resolving deltas:   8% (2/25)
+2022-09-12T15:31:02.7548839Z Resolving deltas:  12% (3/25)
+2022-09-12T15:31:02.7596499Z Resolving deltas:  16% (4/25)
+2022-09-12T15:31:02.7596873Z Resolving deltas:  20% (5/25)
+2022-09-12T15:31:02.7609578Z Resolving deltas:  24% (6/25)
+2022-09-12T15:31:02.7610343Z Resolving deltas:  28% (7/25)
+2022-09-12T15:31:02.7612061Z Resolving deltas:  32% (8/25)
+2022-09-12T15:31:02.7612478Z Resolving deltas:  36% (9/25)
+2022-09-12T15:31:02.7613177Z Resolving deltas:  40% (10/25)
+2022-09-12T15:31:02.7613490Z Resolving deltas:  44% (11/25)
+2022-09-12T15:31:02.7613941Z Resolving deltas:  48% (12/25)
+2022-09-12T15:31:02.7614309Z Resolving deltas:  52% (13/25)
+2022-09-12T15:31:02.7614680Z Resolving deltas:  56% (14/25)
+2022-09-12T15:31:02.7615029Z Resolving deltas:  60% (15/25)
+2022-09-12T15:31:02.7615437Z Resolving deltas:  64% (16/25)
+2022-09-12T15:31:02.7615733Z Resolving deltas:  68% (17/25)
+2022-09-12T15:31:02.7616074Z Resolving deltas:  72% (18/25)
+2022-09-12T15:31:02.7616436Z Resolving deltas:  76% (19/25)
+2022-09-12T15:31:02.7616817Z Resolving deltas:  80% (20/25)
+2022-09-12T15:31:02.7617169Z Resolving deltas:  84% (21/25)
+2022-09-12T15:31:02.7617527Z Resolving deltas:  88% (22/25)
+2022-09-12T15:31:02.7617824Z Resolving deltas:  92% (23/25)
+2022-09-12T15:31:02.7618164Z Resolving deltas:  96% (24/25)
+2022-09-12T15:31:02.7618554Z Resolving deltas: 100% (25/25)
+2022-09-12T15:31:02.7618913Z Resolving deltas: 100% (25/25), done.
+2022-09-12T15:31:02.7825560Z From https://github.com/jeraldlashy/udagram-as-a-microservice-app
+2022-09-12T15:31:02.7826425Z  * [new ref]         4db4dda5853babdc37dec9fff7580ec371509115 -> origin/main
+2022-09-12T15:31:02.7851535Z ##[endgroup]
+2022-09-12T15:31:02.7852195Z ##[group]Determining the checkout info
+2022-09-12T15:31:02.7854286Z ##[endgroup]
+2022-09-12T15:31:02.7855141Z ##[group]Checking out the ref
+2022-09-12T15:31:02.7860330Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2022-09-12T15:31:02.8647320Z Switched to a new branch 'main'
+2022-09-12T15:31:02.8648440Z branch 'main' set up to track 'origin/main'.
+2022-09-12T15:31:02.8658430Z ##[endgroup]
+2022-09-12T15:31:02.8711302Z [command]/usr/bin/git log -1 --format='%H'
+2022-09-12T15:31:02.8754102Z '4db4dda5853babdc37dec9fff7580ec371509115'
+2022-09-12T15:31:02.9248441Z ##[group]Run docker build -t udagram-api-feed ./udagram-api-feed
+2022-09-12T15:31:02.9249055Z [36;1mdocker build -t udagram-api-feed ./udagram-api-feed[0m
+2022-09-12T15:31:02.9249823Z [36;1mdocker tag udagram-api-feed ***/udagram-api-feed[0m
+2022-09-12T15:31:02.9250324Z [36;1m[0m
+2022-09-12T15:31:02.9250695Z [36;1mdocker build -t udagram-api-user ./udagram-api-user[0m
+2022-09-12T15:31:02.9251165Z [36;1mdocker tag udagram-api-user ***/udagram-api-user[0m
+2022-09-12T15:31:02.9251518Z [36;1m[0m
+2022-09-12T15:31:02.9251841Z [36;1mdocker build -t udagram-frontend ./udagram-frontend[0m
+2022-09-12T15:31:02.9252361Z [36;1mdocker tag udagram-frontend ***/udagram-frontend[0m
+2022-09-12T15:31:02.9252709Z [36;1m[0m
+2022-09-12T15:31:02.9253075Z [36;1mdocker build -t reverseproxy ./udagram-reverseproxy[0m
+2022-09-12T15:31:02.9253536Z [36;1mdocker tag reverseproxy ***/reverseproxy[0m
+2022-09-12T15:31:02.9253912Z [36;1m[0m
+2022-09-12T15:31:02.9254403Z [36;1mecho *** | docker login -u *** --password-stdin[0m
+2022-09-12T15:31:02.9254825Z [36;1mdocker push ***/udagram-api-feed[0m
+2022-09-12T15:31:02.9255274Z [36;1mdocker push ***/udagram-api-user[0m
+2022-09-12T15:31:02.9255661Z [36;1mdocker push ***/udagram-frontend[0m
+2022-09-12T15:31:02.9256046Z [36;1mdocker push ***/reverseproxy[0m
+2022-09-12T15:31:02.9316851Z shell: /usr/bin/bash -e {0}
+2022-09-12T15:31:02.9317201Z ##[endgroup]
+2022-09-12T15:31:03.2468289Z Sending build context to Docker daemon  6.142MB
+2022-09-12T15:31:03.2469235Z
+2022-09-12T15:31:03.2517132Z Step 1/7 : FROM node:12
+2022-09-12T15:31:03.2520542Z  ---> 6c8de432fc7f
+2022-09-12T15:31:03.2716973Z Step 2/7 : WORKDIR /usr/src/app
+2022-09-12T15:31:03.4906787Z  ---> Running in bb15a5faab0b
+2022-09-12T15:31:06.1922898Z Removing intermediate container bb15a5faab0b
+2022-09-12T15:31:06.1927726Z  ---> 5d0640e989d6
+2022-09-12T15:31:06.1928279Z Step 3/7 : COPY package*.json ./
+2022-09-12T15:31:07.7916186Z  ---> b2137a631388
+2022-09-12T15:31:07.7919617Z Step 4/7 : RUN npm ci
+2022-09-12T15:31:07.8204025Z  ---> Running in acfcd89fe86c
+2022-09-12T15:31:31.6361238Z
+2022-09-12T15:31:31.6361743Z > bcrypt@5.0.1 install /usr/src/app/node_modules/bcrypt
+2022-09-12T15:31:31.6362454Z > node-pre-gyp install --fallback-to-build
+2022-09-12T15:31:31.6362662Z
+2022-09-12T15:31:32.2559718Z [bcrypt] Success: "/usr/src/app/node_modules/bcrypt/lib/binding/napi-v3/bcrypt_lib.node" is installed via remote
+2022-09-12T15:31:32.2771374Z
+2022-09-12T15:31:32.2772859Z > aws-sdk@2.953.0 postinstall /usr/src/app/node_modules/aws-sdk
+2022-09-12T15:31:32.2773423Z > node scripts/check-node-version.js
+2022-09-12T15:31:32.2773626Z
+2022-09-12T15:31:32.5925863Z added 460 packages in 10.794s
+2022-09-12T15:31:41.2573854Z Removing intermediate container acfcd89fe86c
+2022-09-12T15:31:41.2574497Z  ---> 9df1df1b2c40
+2022-09-12T15:31:41.2574763Z Step 5/7 : COPY . .
+2022-09-12T15:31:43.5923912Z  ---> 3070fd841244
+2022-09-12T15:31:43.5924225Z Step 6/7 : EXPOSE 8080
+2022-09-12T15:31:43.6281749Z  ---> Running in d9e11e7bf537
+2022-09-12T15:31:45.8847492Z Removing intermediate container d9e11e7bf537
+2022-09-12T15:31:45.8848095Z  ---> f9629def3b44
+2022-09-12T15:31:45.8848373Z Step 7/7 : CMD [ "npm", "run", "prod" ]
+2022-09-12T15:31:45.9079643Z  ---> Running in 9ff714420b11
+2022-09-12T15:31:48.1298673Z Removing intermediate container 9ff714420b11
+2022-09-12T15:31:48.1299683Z  ---> 0172be9aaa95
+2022-09-12T15:31:48.1356015Z Successfully built 0172be9aaa95
+2022-09-12T15:31:48.1414121Z Successfully tagged udagram-api-feed:latest
+2022-09-12T15:31:48.2922260Z Sending build context to Docker daemon  6.145MB
+2022-09-12T15:31:48.2922524Z
+2022-09-12T15:31:48.2975256Z Step 1/7 : FROM node:12
+2022-09-12T15:31:48.2978855Z  ---> 6c8de432fc7f
+2022-09-12T15:31:48.2982046Z Step 2/7 : WORKDIR /usr/src/app
+2022-09-12T15:31:48.2985315Z  ---> Using cache
+2022-09-12T15:31:48.2988813Z  ---> 5d0640e989d6
+2022-09-12T15:31:48.2992507Z Step 3/7 : COPY package*.json ./
+2022-09-12T15:31:48.2995837Z  ---> Using cache
+2022-09-12T15:31:48.2999669Z  ---> b2137a631388
+2022-09-12T15:31:48.3003154Z Step 4/7 : RUN npm ci
+2022-09-12T15:31:48.3035263Z  ---> Using cache
+2022-09-12T15:31:48.3039406Z  ---> 9df1df1b2c40
+2022-09-12T15:31:48.3042848Z Step 5/7 : COPY . .
+2022-09-12T15:31:50.6387962Z  ---> 02d550f5488a
+2022-09-12T15:31:50.6388281Z Step 6/7 : EXPOSE 8080
+2022-09-12T15:31:50.6680854Z  ---> Running in 4dc796098b48
+2022-09-12T15:31:52.9048252Z Removing intermediate container 4dc796098b48
+2022-09-12T15:31:52.9049256Z  ---> 006a7d7d7f33
+2022-09-12T15:31:52.9049678Z Step 7/7 : CMD [ "npm", "run", "prod" ]
+2022-09-12T15:31:52.9359403Z  ---> Running in 64e15ea30abf
+2022-09-12T15:31:55.2085001Z Removing intermediate container 64e15ea30abf
+2022-09-12T15:31:55.2086089Z  ---> 730f092b1b7c
+2022-09-12T15:31:55.2103492Z Successfully built 730f092b1b7c
+2022-09-12T15:31:55.2162207Z Successfully tagged udagram-api-user:latest
+2022-09-12T15:31:55.3415277Z Sending build context to Docker daemon  680.4kB
+2022-09-12T15:31:55.3415527Z
+2022-09-12T15:31:55.3510358Z Step 1/8 : FROM beevelop/ionic:latest AS ionic
+2022-09-12T15:31:56.7504378Z latest: Pulling from beevelop/ionic
+2022-09-12T15:31:56.7515625Z 83ee3a23efb7: Pulling fs layer
+2022-09-12T15:31:56.7515940Z db98fc6f11f0: Pulling fs layer
+2022-09-12T15:31:56.7516209Z f611acd52c6c: Pulling fs layer
+2022-09-12T15:31:56.7516480Z 17d86483442d: Pulling fs layer
+2022-09-12T15:31:56.7516752Z 9bd0d448ad3d: Pulling fs layer
+2022-09-12T15:31:56.7517024Z 8a54d3227d16: Pulling fs layer
+2022-09-12T15:31:56.7517284Z 0167874f597b: Pulling fs layer
+2022-09-12T15:31:56.7517576Z 42bf89f553fd: Pulling fs layer
+2022-09-12T15:31:56.7517832Z 24d39f3eaba2: Pulling fs layer
+2022-09-12T15:31:56.7521830Z e10312542e3e: Pulling fs layer
+2022-09-12T15:31:56.7522133Z c30410de46ae: Pulling fs layer
+2022-09-12T15:31:56.7522402Z 284c1f6f2f4a: Pulling fs layer
+2022-09-12T15:31:56.7522882Z 17d86483442d: Waiting
+2022-09-12T15:31:56.7523870Z 9bd0d448ad3d: Waiting
+2022-09-12T15:31:56.7524757Z 8a54d3227d16: Waiting
+2022-09-12T15:31:56.7525549Z 0167874f597b: Waiting
+2022-09-12T15:31:56.7526669Z 42bf89f553fd: Waiting
+2022-09-12T15:31:56.7527423Z 24d39f3eaba2: Waiting
+2022-09-12T15:31:56.7528637Z e10312542e3e: Waiting
+2022-09-12T15:31:56.7530104Z c30410de46ae: Waiting
+2022-09-12T15:31:56.7531265Z 284c1f6f2f4a: Waiting
+2022-09-12T15:31:57.1255260Z db98fc6f11f0: Verifying Checksum
+2022-09-12T15:31:57.1255627Z db98fc6f11f0: Download complete
+2022-09-12T15:31:57.1342288Z f611acd52c6c: Verifying Checksum
+2022-09-12T15:31:57.1346474Z f611acd52c6c: Download complete
+2022-09-12T15:31:57.5825474Z 17d86483442d: Verifying Checksum
+2022-09-12T15:31:57.5826099Z 17d86483442d: Download complete
+2022-09-12T15:31:57.6158936Z 83ee3a23efb7: Verifying Checksum
+2022-09-12T15:31:57.6159949Z 83ee3a23efb7: Download complete
+2022-09-12T15:31:58.9506496Z 83ee3a23efb7: Pull complete
+2022-09-12T15:31:59.6499128Z 0167874f597b: Verifying Checksum
+2022-09-12T15:31:59.6502745Z 0167874f597b: Download complete
+2022-09-12T15:31:59.7792639Z db98fc6f11f0: Pull complete
+2022-09-12T15:31:59.8824698Z f611acd52c6c: Pull complete
+2022-09-12T15:32:00.4096269Z 17d86483442d: Pull complete
+2022-09-12T15:32:00.9507396Z 9bd0d448ad3d: Verifying Checksum
+2022-09-12T15:32:00.9523264Z 9bd0d448ad3d: Download complete
+2022-09-12T15:32:07.0758081Z 9bd0d448ad3d: Pull complete
+2022-09-12T15:32:09.6382693Z 8a54d3227d16: Verifying Checksum
+2022-09-12T15:32:09.6383875Z 8a54d3227d16: Download complete
+2022-09-12T15:32:15.2927813Z e10312542e3e: Verifying Checksum
+2022-09-12T15:32:15.2928229Z e10312542e3e: Download complete
+2022-09-12T15:32:16.6767762Z 8a54d3227d16: Pull complete
+2022-09-12T15:32:22.0842659Z 0167874f597b: Pull complete
+2022-09-12T15:32:23.9763720Z c30410de46ae: Verifying Checksum
+2022-09-12T15:32:23.9767457Z c30410de46ae: Download complete
+2022-09-12T15:32:25.0410658Z 24d39f3eaba2: Verifying Checksum
+2022-09-12T15:32:25.0411149Z 24d39f3eaba2: Download complete
+2022-09-12T15:32:26.6019126Z 284c1f6f2f4a: Verifying Checksum
+2022-09-12T15:32:26.6019625Z 284c1f6f2f4a: Download complete
+2022-09-12T15:32:30.9643540Z 42bf89f553fd: Verifying Checksum
+2022-09-12T15:32:30.9644000Z 42bf89f553fd: Download complete
+2022-09-12T15:33:11.6697051Z 42bf89f553fd: Pull complete
+2022-09-12T15:33:53.8695647Z 24d39f3eaba2: Pull complete
+2022-09-12T15:33:56.7707925Z e10312542e3e: Pull complete
+2022-09-12T15:34:08.7355372Z c30410de46ae: Pull complete
+2022-09-12T15:34:13.5147063Z 284c1f6f2f4a: Pull complete
+2022-09-12T15:34:13.5208363Z Digest: sha256:c43687a2f695a2e41b6210603e9c532c43a9f64d5b9fe86de9e0d21091d654d4
+2022-09-12T15:34:13.5234146Z Status: Downloaded newer image for beevelop/ionic:latest
+2022-09-12T15:34:13.5256542Z  ---> 749060b48224
+2022-09-12T15:34:13.5256849Z Step 2/8 : WORKDIR /usr/src/app
+2022-09-12T15:34:13.5549845Z  ---> Running in 1a77379b88a9
+2022-09-12T15:34:21.3929122Z Removing intermediate container 1a77379b88a9
+2022-09-12T15:34:21.3929744Z  ---> 2513d92f6574
+2022-09-12T15:34:21.3930038Z Step 3/8 : COPY package*.json ./
+2022-09-12T15:34:29.0852489Z  ---> 72d53b01b453
+2022-09-12T15:34:29.0852814Z Step 4/8 : RUN npm ci
+2022-09-12T15:34:29.1092161Z  ---> Running in a09eca844c63
+2022-09-12T15:34:51.4645943Z
+2022-09-12T15:34:51.4646432Z > fsevents@1.2.13 install /usr/src/app/node_modules/chokidar/node_modules/fsevents
+2022-09-12T15:34:51.4646817Z > node install.js
+2022-09-12T15:34:51.4646975Z
+2022-09-12T15:34:51.5246435Z
+2022-09-12T15:34:51.5256264Z Skipping 'fsevents' build as platform linux is not supported
+2022-09-12T15:34:51.5366098Z
+2022-09-12T15:34:51.5366656Z > core-js@2.6.12 postinstall /usr/src/app/node_modules/core-js
+2022-09-12T15:34:51.5367157Z > node -e "try{require('./postinstall')}catch(e){}"
+2022-09-12T15:34:51.5367362Z
+2022-09-12T15:34:51.5893125Z [96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m
+2022-09-12T15:34:51.5893504Z
+2022-09-12T15:34:51.5893907Z [96mThe project needs your help! Please consider supporting of core-js on Open Collective or Patreon: [0m
+2022-09-12T15:34:51.5894469Z [96m>[94m https://opencollective.com/core-js [0m
+2022-09-12T15:34:51.5894919Z [96m>[94m https://www.patreon.com/zloirock [0m
+2022-09-12T15:34:51.5895130Z
+2022-09-12T15:34:51.5895503Z [96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m
+2022-09-12T15:34:51.5895782Z
+2022-09-12T15:34:52.1602338Z
+2022-09-12T15:34:52.1603302Z > fsevents@1.2.13 install /usr/src/app/node_modules/@angular/compiler-cli/node_modules/fsevents
+2022-09-12T15:34:52.1603724Z > node install.js
+2022-09-12T15:34:52.1603881Z
+2022-09-12T15:34:52.2122879Z
+2022-09-12T15:34:52.2127447Z Skipping 'fsevents' build as platform linux is not supported
+2022-09-12T15:34:52.3532261Z
+2022-09-12T15:34:52.3532847Z > @angular/cli@8.3.29 postinstall /usr/src/app/node_modules/@angular/cli
+2022-09-12T15:34:52.3533262Z > node ./bin/postinstall/script.js
+2022-09-12T15:34:52.3533435Z
+2022-09-12T15:34:53.0504135Z
+2022-09-12T15:34:53.0505095Z > fsevents@1.2.13 install /usr/src/app/node_modules/webpack-dev-server/node_modules/fsevents
+2022-09-12T15:34:53.0505525Z > node install.js
+2022-09-12T15:34:53.0505679Z
+2022-09-12T15:34:53.1052232Z
+2022-09-12T15:34:53.1057528Z Skipping 'fsevents' build as platform linux is not supported
+2022-09-12T15:34:53.1459895Z
+2022-09-12T15:34:53.1460867Z > fsevents@1.2.13 install /usr/src/app/node_modules/watchpack-chokidar2/node_modules/fsevents
+2022-09-12T15:34:53.1461295Z > node install.js
+2022-09-12T15:34:53.1461455Z
+2022-09-12T15:34:53.2084739Z
+2022-09-12T15:34:53.2091077Z Skipping 'fsevents' build as platform linux is not supported
+2022-09-12T15:34:53.4023300Z
+2022-09-12T15:34:53.4024180Z > core-js@3.6.4 postinstall /usr/src/app/node_modules/@angular-devkit/build-angular/node_modules/core-js
+2022-09-12T15:34:53.4024766Z > node -e "try{require('./postinstall')}catch(e){}"
+2022-09-12T15:34:53.4024969Z
+2022-09-12T15:34:53.4580268Z [96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m
+2022-09-12T15:34:53.4580650Z
+2022-09-12T15:34:53.4581381Z [96mThe project needs your help! Please consider supporting of core-js on Open Collective or Patreon: [0m
+2022-09-12T15:34:53.4581975Z [96m>[94m https://opencollective.com/core-js [0m
+2022-09-12T15:34:53.4582423Z [96m>[94m https://www.patreon.com/zloirock [0m
+2022-09-12T15:34:53.4582635Z
+2022-09-12T15:34:53.4583009Z [96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m
+2022-09-12T15:34:53.4583289Z
+2022-09-12T15:34:53.6000918Z added 1532 packages in 23.66s
+2022-09-12T15:35:44.0305444Z Removing intermediate container a09eca844c63
+2022-09-12T15:35:44.0306078Z  ---> 5c34ec793cb8
+2022-09-12T15:35:44.0306341Z Step 5/8 : COPY . .
+2022-09-12T15:35:57.8204317Z  ---> 291d65885f30
+2022-09-12T15:35:57.8209681Z Step 6/8 : RUN ionic build
+2022-09-12T15:35:57.8457237Z  ---> Running in 68c78eaecf24
+2022-09-12T15:35:58.8553952Z > ng run app:build
+2022-09-12T15:36:13.8588977Z
+2022-09-12T15:36:13.8590422Z chunk {0} 0.js, 0.js.map () 15.4 kB  [rendered]
+2022-09-12T15:36:13.8590802Z chunk {1} 1.js, 1.js.map () 15.2 kB  [rendered]
+2022-09-12T15:36:13.8591095Z chunk {2} 2.js, 2.js.map () 16.3 kB  [rendered]
+2022-09-12T15:36:13.8591389Z chunk {3} 3.js, 3.js.map () 21.8 kB  [rendered]
+2022-09-12T15:36:13.8591687Z chunk {4} 4.js, 4.js.map () 18.9 kB  [rendered]
+2022-09-12T15:36:13.8591977Z chunk {5} 5.js, 5.js.map () 32.5 kB  [rendered]
+2022-09-12T15:36:13.8592268Z chunk {6} 6.js, 6.js.map () 32.5 kB  [rendered]
+2022-09-12T15:36:13.8592540Z chunk {7} 7.js, 7.js.map () 70.3 kB  [rendered]
+2022-09-12T15:36:13.8592961Z chunk {8} 8.js, 8.js.map () 69.1 kB  [rendered]
+2022-09-12T15:36:13.8593258Z chunk {9} 9.js, 9.js.map () 5.19 kB  [rendered]
+2022-09-12T15:36:13.8593564Z chunk {10} 10.js, 10.js.map () 5.24 kB  [rendered]
+2022-09-12T15:36:13.8593880Z chunk {11} 11.js, 11.js.map () 11.3 kB  [rendered]
+2022-09-12T15:36:13.8594194Z chunk {12} 12.js, 12.js.map () 11.9 kB  [rendered]
+2022-09-12T15:36:13.8594485Z chunk {13} 13.js, 13.js.map () 4.12 kB  [rendered]
+2022-09-12T15:36:13.8594793Z chunk {14} 14.js, 14.js.map () 4.11 kB  [rendered]
+2022-09-12T15:36:13.8595100Z chunk {15} 15.js, 15.js.map () 24.4 kB  [rendered]
+2022-09-12T15:36:13.8595406Z chunk {16} 16.js, 16.js.map () 24.6 kB  [rendered]
+2022-09-12T15:36:13.8596945Z chunk {17} 17.js, 17.js.map () 13.2 kB  [rendered]
+2022-09-12T15:36:13.8597252Z chunk {18} 18.js, 18.js.map () 12.8 kB  [rendered]
+2022-09-12T15:36:13.8597540Z chunk {19} 19.js, 19.js.map () 9.27 kB  [rendered]
+2022-09-12T15:36:13.8597885Z chunk {20} 20.js, 20.js.map () 9.39 kB  [rendered]
+2022-09-12T15:36:13.8598193Z chunk {21} 21.js, 21.js.map () 5.84 kB  [rendered]
+2022-09-12T15:36:13.8598496Z chunk {22} 22.js, 22.js.map () 5.84 kB  [rendered]
+2022-09-12T15:36:13.8598804Z chunk {23} 23.js, 23.js.map () 16.9 kB  [rendered]
+2022-09-12T15:36:13.8599232Z chunk {24} 24.js, 24.js.map () 73 kB  [rendered]
+2022-09-12T15:36:13.8599532Z chunk {25} 25.js, 25.js.map () 72.6 kB  [rendered]
+2022-09-12T15:36:13.8600870Z chunk {26} 26.js, 26.js.map () 21.2 kB  [rendered]
+2022-09-12T15:36:13.8601182Z chunk {27} 27.js, 27.js.map () 20.3 kB  [rendered]
+2022-09-12T15:36:13.8601488Z chunk {28} 28.js, 28.js.map () 4.1 kB  [rendered]
+2022-09-12T15:36:13.8601796Z chunk {29} 29.js, 29.js.map () 15.1 kB  [rendered]
+2022-09-12T15:36:13.8602097Z chunk {30} 30.js, 30.js.map () 15.1 kB  [rendered]
+2022-09-12T15:36:13.8602400Z chunk {31} 31.js, 31.js.map () 15.9 kB  [rendered]
+2022-09-12T15:36:13.8602686Z chunk {32} 32.js, 32.js.map () 15.7 kB  [rendered]
+2022-09-12T15:36:13.8602987Z chunk {33} 33.js, 33.js.map () 31.1 kB  [rendered]
+2022-09-12T15:36:13.8604028Z chunk {34} 34.js, 34.js.map () 30.9 kB  [rendered]
+2022-09-12T15:36:13.8604323Z chunk {35} 35.js, 35.js.map () 42.8 kB  [rendered]
+2022-09-12T15:36:13.8604614Z chunk {36} 36.js, 36.js.map () 46.4 kB  [rendered]
+2022-09-12T15:36:13.8604910Z chunk {37} 37.js, 37.js.map () 14.2 kB  [rendered]
+2022-09-12T15:36:13.8605185Z chunk {38} 38.js, 38.js.map () 13.9 kB  [rendered]
+2022-09-12T15:36:13.8605631Z chunk {39} 39.js, 39.js.map () 40.4 kB  [rendered]
+2022-09-12T15:36:13.8605943Z chunk {40} 40.js, 40.js.map () 40.5 kB  [rendered]
+2022-09-12T15:36:13.8606238Z chunk {41} 41.js, 41.js.map () 16.8 kB  [rendered]
+2022-09-12T15:36:13.8606647Z chunk {42} 42.js, 42.js.map () 16.8 kB  [rendered]
+2022-09-12T15:36:13.8606928Z chunk {43} 43.js, 43.js.map () 45.2 kB  [rendered]
+2022-09-12T15:36:13.8607196Z chunk {44} 44.js, 44.js.map () 22.2 kB  [rendered]
+2022-09-12T15:36:13.8607474Z chunk {45} 45.js, 45.js.map () 21.5 kB  [rendered]
+2022-09-12T15:36:13.8607755Z chunk {46} 46.js, 46.js.map () 12.9 kB  [rendered]
+2022-09-12T15:36:13.8608043Z chunk {47} 47.js, 47.js.map () 12.9 kB  [rendered]
+2022-09-12T15:36:13.8608325Z chunk {48} 48.js, 48.js.map () 15 kB  [rendered]
+2022-09-12T15:36:13.8608613Z chunk {49} 49.js, 49.js.map () 15.2 kB  [rendered]
+2022-09-12T15:36:13.8608877Z chunk {50} 50.js, 50.js.map () 23.6 kB  [rendered]
+2022-09-12T15:36:13.8609161Z chunk {51} 51.js, 51.js.map () 25 kB  [rendered]
+2022-09-12T15:36:13.8609449Z chunk {52} 52.js, 52.js.map () 21.2 kB  [rendered]
+2022-09-12T15:36:13.8609730Z chunk {53} 53.js, 53.js.map () 21.2 kB  [rendered]
+2022-09-12T15:36:13.8610012Z chunk {54} 54.js, 54.js.map () 14.8 kB  [rendered]
+2022-09-12T15:36:13.8610294Z chunk {55} 55.js, 55.js.map () 14.8 kB  [rendered]
+2022-09-12T15:36:13.8610557Z chunk {56} 56.js, 56.js.map () 7.88 kB  [rendered]
+2022-09-12T15:36:13.8610836Z chunk {57} 57.js, 57.js.map () 32.8 kB  [rendered]
+2022-09-12T15:36:13.8611116Z chunk {58} 58.js, 58.js.map () 27.9 kB  [rendered]
+2022-09-12T15:36:13.8611403Z chunk {59} 59.js, 59.js.map () 25.4 kB  [rendered]
+2022-09-12T15:36:13.8611682Z chunk {60} 60.js, 60.js.map () 17.2 kB  [rendered]
+2022-09-12T15:36:13.8611961Z chunk {61} 61.js, 61.js.map () 16.8 kB  [rendered]
+2022-09-12T15:36:13.8612229Z chunk {62} 62.js, 62.js.map () 27 kB  [rendered]
+2022-09-12T15:36:13.8612514Z chunk {63} 63.js, 63.js.map () 27 kB  [rendered]
+2022-09-12T15:36:13.8612795Z chunk {64} 64.js, 64.js.map () 47.2 kB  [rendered]
+2022-09-12T15:36:13.8613077Z chunk {65} 65.js, 65.js.map () 47.2 kB  [rendered]
+2022-09-12T15:36:13.8613358Z chunk {66} 66.js, 66.js.map () 10.9 kB  [rendered]
+2022-09-12T15:36:13.8613636Z chunk {67} 67.js, 67.js.map () 7.74 kB  [rendered]
+2022-09-12T15:36:13.8613902Z chunk {68} 68.js, 68.js.map () 7.74 kB  [rendered]
+2022-09-12T15:36:13.8614183Z chunk {69} 69.js, 69.js.map () 16 kB  [rendered]
+2022-09-12T15:36:13.8614469Z chunk {70} 70.js, 70.js.map () 16.2 kB  [rendered]
+2022-09-12T15:36:13.8614748Z chunk {71} 71.js, 71.js.map () 2.06 kB  [rendered]
+2022-09-12T15:36:13.8615031Z chunk {72} 72.js, 72.js.map () 13.9 kB  [rendered]
+2022-09-12T15:36:13.8615309Z chunk {73} 73.js, 73.js.map () 13.9 kB  [rendered]
+2022-09-12T15:36:13.8615569Z chunk {74} 74.js, 74.js.map () 20.8 kB  [rendered]
+2022-09-12T15:36:13.8615845Z chunk {75} 75.js, 75.js.map () 21.3 kB  [rendered]
+2022-09-12T15:36:13.8616127Z chunk {76} 76.js, 76.js.map () 12.9 kB  [rendered]
+2022-09-12T15:36:13.8616406Z chunk {77} 77.js, 77.js.map () 12.8 kB  [rendered]
+2022-09-12T15:36:13.8616688Z chunk {78} 78.js, 78.js.map () 23.3 kB  [rendered]
+2022-09-12T15:36:13.8617044Z chunk {common} common.js, common.js.map (common) 14.7 kB  [rendered]
+2022-09-12T15:36:13.8617922Z chunk {core-js-js} core-js-js.js, core-js-js.js.map (core-js-js) 78.7 kB  [rendered]
+2022-09-12T15:36:13.8618690Z chunk {css-shim-206ea950-3169f23e-js} css-shim-206ea950-3169f23e-js.js, css-shim-206ea950-3169f23e-js.js.map (css-shim-206ea950-3169f23e-js) 21.9 kB  [rendered]
+2022-09-12T15:36:13.8620107Z chunk {dom-96781eef-a2fb04dd-js} dom-96781eef-a2fb04dd-js.js, dom-96781eef-a2fb04dd-js.js.map (dom-96781eef-a2fb04dd-js) 27.7 kB  [rendered]
+2022-09-12T15:36:13.8621046Z chunk {dom-js} dom-js.js, dom-js.js.map (dom-js) 20.2 kB  [rendered]
+2022-09-12T15:36:13.8621794Z chunk {focus-visible-70713a0c-js} focus-visible-70713a0c-js.js, focus-visible-70713a0c-js.js.map (focus-visible-70713a0c-js) 2.19 kB  [rendered]
+2022-09-12T15:36:13.8622882Z chunk {hardware-back-button-5afe3cb0-js} hardware-back-button-5afe3cb0-js.js, hardware-back-button-5afe3cb0-js.js.map (hardware-back-button-5afe3cb0-js) 2.87 kB  [rendered]
+2022-09-12T15:36:13.8623872Z chunk {home-home-module} home-home-module.js, home-home-module.js.map (home-home-module) 35.5 kB  [rendered]
+2022-09-12T15:36:13.8624550Z chunk {index-69c37885-js} index-69c37885-js.js, index-69c37885-js.js.map (index-69c37885-js) 41.9 kB  [rendered]
+2022-09-12T15:36:13.8625292Z chunk {input-shims-a4fc53ac-js} input-shims-a4fc53ac-js.js, input-shims-a4fc53ac-js.js.map (input-shims-a4fc53ac-js) 13.5 kB  [rendered]
+2022-09-12T15:36:13.8626259Z chunk {ios-transition-504cdd09-js} ios-transition-504cdd09-js.js, ios-transition-504cdd09-js.js.map (ios-transition-504cdd09-js) 26.6 kB  [rendered]
+2022-09-12T15:36:13.8626768Z chunk {main} main.js, main.js.map (main) 82.4 kB [initial] [rendered]
+2022-09-12T15:36:13.8627462Z chunk {md-transition-fea2bbfb-js} md-transition-fea2bbfb-js.js, md-transition-fea2bbfb-js.js.map (md-transition-fea2bbfb-js) 3.91 kB  [rendered]
+2022-09-12T15:36:13.8628045Z chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 316 kB [initial] [rendered]
+2022-09-12T15:36:13.8628903Z chunk {polyfills-es5} polyfills-es5.js, polyfills-es5.js.map (polyfills-es5) 716 kB [initial] [rendered]
+2022-09-12T15:36:13.8629368Z chunk {runtime} runtime.js, runtime.js.map (runtime) 9.77 kB [entry] [rendered]
+2022-09-12T15:36:13.8630131Z chunk {shadow-css-4889ae62-23996f3f-js} shadow-css-4889ae62-23996f3f-js.js, shadow-css-4889ae62-23996f3f-js.js.map (shadow-css-4889ae62-23996f3f-js) 15.7 kB  [rendered]
+2022-09-12T15:36:13.8630937Z chunk {status-tap-32c72c43-js} status-tap-32c72c43-js.js, status-tap-32c72c43-js.js.map (status-tap-32c72c43-js) 1.83 kB  [rendered]
+2022-09-12T15:36:13.8631438Z chunk {styles} styles.js, styles.js.map (styles) 100 kB [initial] [rendered]
+2022-09-12T15:36:13.8632075Z chunk {swipe-back-35ad8e37-js} swipe-back-35ad8e37-js.js, swipe-back-35ad8e37-js.js.map (swipe-back-35ad8e37-js) 2.67 kB  [rendered]
+2022-09-12T15:36:13.8632883Z chunk {swiper-bundle-8bab85e6-js} swiper-bundle-8bab85e6-js.js, swiper-bundle-8bab85e6-js.js.map (swiper-bundle-8bab85e6-js) 213 kB  [rendered]
+2022-09-12T15:36:13.8633674Z chunk {tap-click-ca00ce7f-js} tap-click-ca00ce7f-js.js, tap-click-ca00ce7f-js.js.map (tap-click-ca00ce7f-js) 6.32 kB  [rendered]
+2022-09-12T15:36:13.8634181Z chunk {vendor} vendor.js, vendor.js.map (vendor) 4.66 MB [initial] [rendered]
+2022-09-12T15:36:13.8634666Z Date: 2022-09-12T15:36:13.856Z - Hash: 17372819a61f451ccd62 - Time: 11047ms
+2022-09-12T15:36:26.0028145Z Removing intermediate container 68c78eaecf24
+2022-09-12T15:36:26.0029320Z  ---> 5a3182b4901b
+2022-09-12T15:36:26.0034065Z Step 7/8 : FROM nginx:alpine
+2022-09-12T15:36:27.4206669Z alpine: Pulling from library/nginx
+2022-09-12T15:36:27.8080017Z 213ec9aee27d: Already exists
+2022-09-12T15:36:27.8100395Z 2546ae67167b: Pulling fs layer
+2022-09-12T15:36:27.8109560Z 23b845224e13: Pulling fs layer
+2022-09-12T15:36:27.8112402Z 9bd5732789a3: Pulling fs layer
+2022-09-12T15:36:27.8116025Z 328309e59ded: Pulling fs layer
+2022-09-12T15:36:27.8116707Z b231d02e5150: Pulling fs layer
+2022-09-12T15:36:27.8117236Z 328309e59ded: Waiting
+2022-09-12T15:36:27.8117630Z b231d02e5150: Waiting
+2022-09-12T15:36:28.2055739Z 23b845224e13: Verifying Checksum
+2022-09-12T15:36:28.2056181Z 23b845224e13: Download complete
+2022-09-12T15:36:28.2407675Z 9bd5732789a3: Verifying Checksum
+2022-09-12T15:36:28.2408859Z 9bd5732789a3: Download complete
+2022-09-12T15:36:28.2729040Z 2546ae67167b: Verifying Checksum
+2022-09-12T15:36:28.2730119Z 2546ae67167b: Download complete
+2022-09-12T15:36:28.5676719Z 328309e59ded: Verifying Checksum
+2022-09-12T15:36:28.5677087Z 328309e59ded: Download complete
+2022-09-12T15:36:28.5859969Z b231d02e5150: Verifying Checksum
+2022-09-12T15:36:28.5860914Z b231d02e5150: Download complete
+2022-09-12T15:36:28.7799237Z 2546ae67167b: Pull complete
+2022-09-12T15:36:28.8403434Z 23b845224e13: Pull complete
+2022-09-12T15:36:28.9065523Z 9bd5732789a3: Pull complete
+2022-09-12T15:36:28.9750984Z 328309e59ded: Pull complete
+2022-09-12T15:36:29.0411612Z b231d02e5150: Pull complete
+2022-09-12T15:36:29.0474600Z Digest: sha256:082f8c10bd47b6acc8ef15ae61ae45dd8fde0e9f389a8b5cb23c37408642bf5d
+2022-09-12T15:36:29.0498795Z Status: Downloaded newer image for nginx:alpine
+2022-09-12T15:36:29.0517281Z  ---> 804f9cebfdc5
+2022-09-12T15:36:29.0517729Z Step 8/8 : COPY --from=ionic  /usr/src/app/www /usr/share/nginx/html
+2022-09-12T15:36:30.0430161Z  ---> 45f303602896
+2022-09-12T15:36:30.0598466Z Successfully built 45f303602896
+2022-09-12T15:36:30.0655346Z Successfully tagged udagram-frontend:latest
+2022-09-12T15:36:30.1401609Z Sending build context to Docker daemon  3.584kB
+2022-09-12T15:36:30.1402707Z
+2022-09-12T15:36:30.1897652Z Step 1/2 : FROM nginx:alpine
+2022-09-12T15:36:30.1902362Z  ---> 804f9cebfdc5
+2022-09-12T15:36:30.1903131Z Step 2/2 : COPY nginx.conf /etc/nginx/nginx.conf
+2022-09-12T15:36:31.0162981Z  ---> a01dcc7e774c
+2022-09-12T15:36:31.0163351Z Successfully built a01dcc7e774c
+2022-09-12T15:36:31.0192681Z Successfully tagged reverseproxy:latest
+2022-09-12T15:36:32.1343186Z WARNING! Your password will be stored unencrypted in /home/runner/.docker/config.json.
+2022-09-12T15:36:32.1344154Z Configure a credential helper to remove this warning. See
+2022-09-12T15:36:32.1345391Z https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+2022-09-12T15:36:32.1345712Z
+2022-09-12T15:36:32.1349436Z Login Succeeded
+2022-09-12T15:36:32.1728344Z Using default tag: latest
+2022-09-12T15:36:32.1855659Z The push refers to repository [docker.io/***/udagram-api-feed]
+2022-09-12T15:36:32.5043767Z 2e214c08bc11: Preparing
+2022-09-12T15:36:32.5044103Z a1e300c9aa13: Preparing
+2022-09-12T15:36:32.5044384Z fdfe5c0d9b4a: Preparing
+2022-09-12T15:36:32.5045969Z fdc652fdca16: Preparing
+2022-09-12T15:36:32.5046383Z 586c0b414da7: Preparing
+2022-09-12T15:36:32.5046641Z 0bfd290f2c17: Preparing
+2022-09-12T15:36:32.5046881Z 6d75cd01c26c: Preparing
+2022-09-12T15:36:32.5049009Z 95904c181913: Preparing
+2022-09-12T15:36:32.5053463Z df69bfa94785: Preparing
+2022-09-12T15:36:32.5057067Z f35deb8d96fc: Preparing
+2022-09-12T15:36:32.5061368Z f6c2459e2059: Preparing
+2022-09-12T15:36:32.5061638Z f8323fb3a55c: Preparing
+2022-09-12T15:36:32.5065232Z 2f4dc9775f33: Preparing
+2022-09-12T15:36:32.5068990Z 0bfd290f2c17: Waiting
+2022-09-12T15:36:32.5074536Z 6d75cd01c26c: Waiting
+2022-09-12T15:36:32.5078240Z 95904c181913: Waiting
+2022-09-12T15:36:32.5081969Z df69bfa94785: Waiting
+2022-09-12T15:36:32.5085539Z f35deb8d96fc: Waiting
+2022-09-12T15:36:32.5088803Z f6c2459e2059: Waiting
+2022-09-12T15:36:32.5092283Z f8323fb3a55c: Waiting
+2022-09-12T15:36:32.5093278Z 2f4dc9775f33: Waiting
+2022-09-12T15:36:34.4036524Z 586c0b414da7: Mounted from library/node
+2022-09-12T15:36:35.6307453Z fdc652fdca16: Pushed
+2022-09-12T15:36:35.6712719Z fdfe5c0d9b4a: Pushed
+2022-09-12T15:36:35.8827540Z 0bfd290f2c17: Mounted from library/node
+2022-09-12T15:36:36.0816145Z 2e214c08bc11: Pushed
+2022-09-12T15:36:37.5043718Z 6d75cd01c26c: Mounted from library/node
+2022-09-12T15:36:37.5658498Z 95904c181913: Mounted from library/node
+2022-09-12T15:36:37.8919611Z df69bfa94785: Mounted from library/node
+2022-09-12T15:36:38.2171128Z f35deb8d96fc: Mounted from library/node
+2022-09-12T15:36:39.3796572Z f6c2459e2059: Mounted from library/node
+2022-09-12T15:36:39.3980693Z f8323fb3a55c: Mounted from library/node
+2022-09-12T15:36:39.7398902Z 2f4dc9775f33: Mounted from library/node
+2022-09-12T15:36:49.9561013Z a1e300c9aa13: Pushed
+2022-09-12T15:36:53.2361242Z latest: digest: sha256:d9d541f5da492102ca124bd6f39176ca129def8d041804b0c34bf14f8f239e47 size: 3054
+2022-09-12T15:36:53.2705650Z Using default tag: latest
+2022-09-12T15:36:53.2822741Z The push refers to repository [docker.io/***/udagram-api-user]
+2022-09-12T15:36:53.6276927Z 982bfd13423c: Preparing
+2022-09-12T15:36:53.6277274Z a1e300c9aa13: Preparing
+2022-09-12T15:36:53.6277532Z fdfe5c0d9b4a: Preparing
+2022-09-12T15:36:53.6277789Z fdc652fdca16: Preparing
+2022-09-12T15:36:53.6278026Z 586c0b414da7: Preparing
+2022-09-12T15:36:53.6278270Z 0bfd290f2c17: Preparing
+2022-09-12T15:36:53.6283753Z 6d75cd01c26c: Preparing
+2022-09-12T15:36:53.6285835Z 95904c181913: Preparing
+2022-09-12T15:36:53.6290086Z df69bfa94785: Preparing
+2022-09-12T15:36:53.6291800Z f35deb8d96fc: Preparing
+2022-09-12T15:36:53.6292328Z f6c2459e2059: Preparing
+2022-09-12T15:36:53.6293974Z f8323fb3a55c: Preparing
+2022-09-12T15:36:53.6294627Z 2f4dc9775f33: Preparing
+2022-09-12T15:36:53.6313787Z 0bfd290f2c17: Waiting
+2022-09-12T15:36:53.6314377Z 6d75cd01c26c: Waiting
+2022-09-12T15:36:53.6314910Z 95904c181913: Waiting
+2022-09-12T15:36:53.6316637Z df69bfa94785: Waiting
+2022-09-12T15:36:53.6318530Z f35deb8d96fc: Waiting
+2022-09-12T15:36:53.6319001Z f6c2459e2059: Waiting
+2022-09-12T15:36:53.6319344Z f8323fb3a55c: Waiting
+2022-09-12T15:36:53.6319704Z 2f4dc9775f33: Waiting
+2022-09-12T15:36:56.1488547Z a1e300c9aa13: Mounted from ***/udagram-api-feed
+2022-09-12T15:36:56.1564940Z fdfe5c0d9b4a: Mounted from ***/udagram-api-feed
+2022-09-12T15:36:56.1691422Z 586c0b414da7: Mounted from ***/udagram-api-feed
+2022-09-12T15:36:56.6760700Z fdc652fdca16: Mounted from ***/udagram-api-feed
+2022-09-12T15:36:57.9732646Z 0bfd290f2c17: Mounted from ***/udagram-api-feed
+2022-09-12T15:36:57.9874149Z 95904c181913: Mounted from ***/udagram-api-feed
+2022-09-12T15:36:58.6713949Z 6d75cd01c26c: Mounted from ***/udagram-api-feed
+2022-09-12T15:36:58.9605948Z 982bfd13423c: Pushed
+2022-09-12T15:36:59.7196576Z f6c2459e2059: Mounted from ***/udagram-api-feed
+2022-09-12T15:36:59.7434400Z df69bfa94785: Mounted from ***/udagram-api-feed
+2022-09-12T15:37:00.4387671Z f35deb8d96fc: Mounted from ***/udagram-api-feed
+2022-09-12T15:37:00.7850622Z 2f4dc9775f33: Mounted from ***/udagram-api-feed
+2022-09-12T15:37:01.1864611Z f8323fb3a55c: Mounted from ***/udagram-api-feed
+2022-09-12T15:37:04.3490129Z latest: digest: sha256:ab848b368947e746e4f26579e2c690693ca1b71d93fd575c7c40131a2074c745 size: 3054
+2022-09-12T15:37:04.3849107Z Using default tag: latest
+2022-09-12T15:37:04.3965335Z The push refers to repository [docker.io/***/udagram-frontend]
+2022-09-12T15:37:04.7106137Z b77dd0a78262: Preparing
+2022-09-12T15:37:04.7107029Z bf4e176a4d9b: Preparing
+2022-09-12T15:37:04.7107837Z a1d571e4e83d: Preparing
+2022-09-12T15:37:04.7108139Z 6d97b4d00719: Preparing
+2022-09-12T15:37:04.7113865Z 2a7647ca3937: Preparing
+2022-09-12T15:37:04.7116498Z 549c42eea4a6: Preparing
+2022-09-12T15:37:04.7117096Z 994393dc58e7: Preparing
+2022-09-12T15:37:04.7121385Z 549c42eea4a6: Waiting
+2022-09-12T15:37:04.7121738Z 994393dc58e7: Waiting
+2022-09-12T15:37:07.2768166Z bf4e176a4d9b: Mounted from library/nginx
+2022-09-12T15:37:07.2970522Z 2a7647ca3937: Mounted from library/nginx
+2022-09-12T15:37:07.3217505Z a1d571e4e83d: Mounted from library/nginx
+2022-09-12T15:37:07.6814238Z 6d97b4d00719: Mounted from library/nginx
+2022-09-12T15:37:08.7648942Z 994393dc58e7: Mounted from library/nginx
+2022-09-12T15:37:09.0773990Z 549c42eea4a6: Mounted from library/nginx
+2022-09-12T15:37:09.8097649Z b77dd0a78262: Pushed
+2022-09-12T15:37:12.9655832Z latest: digest: sha256:a4e4f83ab2f7495a71fb007a504d42e47a3b7c65153258507d55457440c7942b size: 1779
+2022-09-12T15:37:13.0001139Z Using default tag: latest
+2022-09-12T15:37:13.0159359Z The push refers to repository [docker.io/***/reverseproxy]
+2022-09-12T15:37:13.3283738Z f60fd786a152: Preparing
+2022-09-12T15:37:13.3288082Z bf4e176a4d9b: Preparing
+2022-09-12T15:37:13.3288424Z a1d571e4e83d: Preparing
+2022-09-12T15:37:13.3291264Z 6d97b4d00719: Preparing
+2022-09-12T15:37:13.3291536Z 2a7647ca3937: Preparing
+2022-09-12T15:37:13.3291788Z 549c42eea4a6: Preparing
+2022-09-12T15:37:13.3292035Z 994393dc58e7: Preparing
+2022-09-12T15:37:13.3297255Z 549c42eea4a6: Waiting
+2022-09-12T15:37:13.3298000Z 994393dc58e7: Waiting
+2022-09-12T15:37:15.5096530Z bf4e176a4d9b: Mounted from ***/udagram-frontend
+2022-09-12T15:37:17.3920825Z 2a7647ca3937: Mounted from ***/udagram-frontend
+2022-09-12T15:37:17.3938833Z a1d571e4e83d: Mounted from ***/udagram-frontend
+2022-09-12T15:37:17.7369781Z 6d97b4d00719: Mounted from ***/udagram-frontend
+2022-09-12T15:37:18.5808772Z f60fd786a152: Pushed
+2022-09-12T15:37:19.3027709Z 994393dc58e7: Mounted from ***/udagram-frontend
+2022-09-12T15:37:19.3448077Z 549c42eea4a6: Mounted from ***/udagram-frontend
+2022-09-12T15:37:22.8913070Z latest: digest: sha256:b04e15c255240242c4db64e315ffa5f43816bd50f6590de3152e12a13e2ee97a size: 1775
+2022-09-12T15:37:22.9057817Z Post job cleanup.
+2022-09-12T15:37:23.1627856Z [command]/usr/bin/git version
+2022-09-12T15:37:23.1695442Z git version 2.37.3
+2022-09-12T15:37:23.1766760Z Temporarily overriding HOME='/home/runner/work/_temp/d9afa137-9c65-41d1-a0dd-98b762a6de11' before making global git config changes
+2022-09-12T15:37:23.1768285Z Adding repository directory to the temporary git global config as a safe directory
+2022-09-12T15:37:23.1773906Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/udagram-as-a-microservice-app/udagram-as-a-microservice-app
+2022-09-12T15:37:23.1820145Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2022-09-12T15:37:23.1862724Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :
+2022-09-12T15:37:23.2227722Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2022-09-12T15:37:23.2251555Z http.https://github.com/.extraheader
+2022-09-12T15:37:23.2267520Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2022-09-12T15:37:23.2316882Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :
+2022-09-12T15:37:23.2901630Z Cleaning up orphan processes
