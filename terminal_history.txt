@@ -1,0 +1,479 @@
+  511  cd udagram-as-a-microservice-app/
+  512  ls
+  513  docker-compose -f docker-compose-build.yaml build --parallel
+  514  sudo groupadd docker
+  515  sudo usermod -aG docker lashie
+  516  sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
+  517  wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+  518  sudo apt-get update
+  519  sudo apt-get -y install postgresql
+  520  psql -ver
+  521  postgres
+  522  sudo -i -u postgres
+  523  ionic --version
+  524  aws iam list-users
+  525  kubectl version --client
+  526  cd Desktop/
+  527  mkdir project
+  528  cd project/
+  529  code
+  530  code .
+  531  psql -h udagram-lashie-postgres.cvuiyba1zwnx.us-east-1.rds.amazonaws.com -U postgres postgres
+  532  docker run hello-world
+  533  sudo docker run hello-world
+  534  docker
+  535  docker run hello-world
+  536  sudo service docker restart
+  537  sudo systemctl enable docker
+  538  sudo systemctl start docker
+  539  tail -f docker
+  540  tail -f docker.logs
+  541  sudo chmod +x /usr/local/bin/docker-compose
+  542  sudo curl -L https://github.com/docker/compose/releases/download/1.21.0/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
+  543  sudo apt install docker-compose
+  544  source set_env.sh
+  545  docker-compose -f docker-compose-build.yaml build --parallel
+  546  docker compose
+  547  docker-compose -f docker-compose-build.yaml build --parallel
+  548  sudo docker-compose -f docker-compose-build.yaml build --parallel
+  549  docker-compose down
+  550  sudo docker-compose down
+  551  echo $URL
+  552  cd udagram-api-feed/
+  553  npm i
+  554  cd ..
+  555  cd udagram-api-user/
+  556  npm i
+  557  cd
+  558  code ~/.profile
+  559  source  ~/.profile
+  560  ECHO $URL
+  561  echo $URL
+  562  source set_env.sh
+  563  cd udagram-frontend
+  564  nmp i
+  565  npm i
+  566  npm install -f
+  567  ionic build
+  568  ionic serve
+  569  source set_env.sh
+  570  \
+  571  cd udagram-api
+  572  npm i
+  573  npm run dev
+  574  cd ..
+  575  cd udagram-api/* udagram-api-feed/
+  576  cp udagram-api/* udagram-api-feed/
+  577  cp -r udagram-api/* udagram-api-feed/
+  578  cp -r udagram-api/* udagram-api-user/
+  579  source set_env.sh
+  580  docker image prune --all
+  581  docker-compose -f docker-compose-build.yaml build --parallel
+  582  sudo docker-compose -f docker-compose-build.yaml build --parallel
+  583  docker-compose -f docker-compose-build.yaml build --parallel
+  584  sudo docker-compose -f docker-compose-build.yaml build --parallel
+  585  sudo docker-compose up
+  586  docker-compose -f docker-compose-build.yaml build --parallel
+  587  docker image prune --all
+  588  cd udagram-api-feed/
+  589  npm i
+  590  cd ..
+  591  cd udagram-api-user/
+  592  npm i
+  593  cd ..
+  594  cd udagram-frontend/
+  595  npm i
+  596  cd ..
+  597  docker-compose -f docker-compose-build.yaml build --parallel
+  598  docker compose up
+  599  docker-compose config
+  600  docker-compose down
+  601  docker image prune --all
+  602  docker ps
+  603  docker-compose -f docker-compose-build.yaml build --parallel
+  604  docker-compose down
+  605  docker image prune --all
+  606  cd udagram-api-feed/
+  607  npm i
+  608  cd ..
+  609  npm i
+  610  cd udagram-api-user/
+  611  npm i
+  612  cd ..
+  613  cd udagram-frontend/
+  614  npm i
+  615  ionic build
+  616  cd ..
+  617  docker image prune --all
+  618  docker-compose -f docker-compose-build.yaml build --parallel
+  619  docker-compose up
+  620  cd udacity-c3-deployment/docker/
+  621  ls
+  622  docker-compose -f docker-compose-build.yaml build --parallel
+  623  docker compose up
+  624  docker image prune --all
+  625  docker-compose -f docker-compose-build.yaml build --parallel
+  626  docker-compose up
+  627  cat Property 'sync' does not exist on type 'Sequelize'.ts(2339)
+  628  cat /root/.npm/_logs/2022-09-11T18_09_53_839Z-debug.log
+  629  sudo cat /root/.npm/_logs/2022-09-11T18_09_53_839Z-debug.log
+  630  code .
+  631  cd Desktop/
+  632  cd project
+  633  ls
+  634  cd udagram-as-a-microservice-app/
+  635  code .
+  636  cd
+  637  cd Desk
+  638  cd Desktop/
+  639  mkdir Repoetry
+  640  cd Repoetry/
+  641  mkdir try1
+  642  cd try
+  643  cd try1/
+  644  git clone https://github.com/lichang333/Refactor-Udagram-App-into-Microservices-and-Deploy-1.git
+  645  cd
+  646  cd Desktop/Repoetry/try1/
+  647  ls
+  648  cd Refactor-Udagram-App-into-Microservices-and-Deploy-1/
+  649  code .
+  650  docker-compose -f docker-compose-build.yaml build --parallel
+  651  code .
+  652  Property 'sync' does not exist on type 'Sequelize'.ts(2339)
+  653  docker rm -f $(docker ps -aq)
+  654  cd udagram-api
+  655  npm run dev
+  656  echo $AWS_BUSKET
+  657  echo $AWS_BUCKET
+  658  npm run dev
+  659  cd udagram-frontend/
+  660  ionic build
+  661  ionic serve
+  662  cd udagram-api-feed/
+  663  npm i
+  664  cd ..
+  665  cd udagram-api-user/
+  666  npm i
+  667  cd ..
+  668  cd udagram-frontend/
+  669  npm i
+  670  npm i -f
+  671  ionic build
+  672  cd ..
+  673  docker image prune --all
+  674  docker-compose -f docker-compose-build.yaml build --parallel
+  675  docker compose up
+  676  docker ps
+  677  docker kill
+  678  docker kill bdbef3de130e
+  679  docker ps
+  680  docker kill 6eed49f65c8c
+  681  docker ps
+  682  docker compose up
+  683  docker-compose up
+  684  docker-compose down
+  685  docker-compose up
+  686  git rm --cached set_env.sh
+  687  docker-compose up
+  688  docker ps
+  689  docker-compose up
+  690  git rm --cached set_env.sh
+  691  docker image prune --all
+  692  docker compose down
+  693  docker ps
+  694  git status
+  695  git add .
+  696  git commit -a "Modified docker-image.yml"
+  697  git commit -m "Modified docker-image.yml"
+  698  git push origin main
+  699  git add .
+  700  git commit -m "Modified docker-image.yml"
+  701  git push origin main
+  702  git add .
+  703  git commit -m "Added Work Flow Logs"
+  704  git push origin main
+  705  kubectl version --short
+  706  kubectl --version
+  707  kubectl -ver
+  708  kubectl -v
+  709  kubectl --help
+  710  kubectl [200~kubectl version --short
+  711  kubectl version
+  712  kubectl version --short
+  713  kubectl version | grep Client | cut -d : -f 5
+  714  kubectl version --short
+  715  cd udagram-api-user/
+  716  npm io
+  717  npm i
+  718  d ..
+  719  cd ..
+  720  cd udagram-api-feed/
+  721  npm i
+  722  cd ..
+  723  cd udagram-frontend/
+  724  npm i
+  725  npm i -f
+  726  cd ..
+  727  docker-compose -f docker-compose-build.yaml build --parallel
+  728  docker-compose u
+  729  docker-compose up
+  730  git init
+  731  git add .
+  732  git commit -m "initial Commit"
+  733  git branch -M main
+  734  git remote add origin https://github.com/jeraldlashy/udagram-as-a-microservice-app.git
+  735  git push -u origin main
+  736  docker ps
+  737  docker-compose up
+  738  snap install zoom
+  739  snap install zoom-client
+  740  zoom-client
+  741  cd
+  742  cd Desktop/Final\ Project/'
+  743  cd Desktop/Final\ Project/
+  744  cd lashie
+  745  cd udagram-as-a-microservice-app/
+  746  ls
+  747  code .
+  748  kubectl get ns
+  749  sudo apt-get update
+  750  sudo apt-get install -y ca-certificates curl
+  751  sudo apt update
+  752  sudo apt upgrade
+  753  snap install kubectl --classic
+  754  kubectl version --client
+  755  kubectl version --short
+  756  kubectl describe apiservice v1beta1.metrics.k8s.io
+  757  snap remove kubectl
+  758  sudo apt remove kubectl
+  759  ls /usr/local/bin/kubectl
+  760  cd
+  761  ls /usr/local/bin/kubectl
+  762  cd /usr/local/bin/kubectl
+  763  cd ~/.kube
+  764  ls
+  765  cd
+  766  history
+  767  curl -o kubectl https://s3.us-west-2.amazonaws.com/amazon-eks/1.23.7/2022-06-29/bin/linux/amd64/kubectl
+  768  chmod +x ./kubectl
+  769  mkdir -p $HOME/bin && cp ./kubectl $HOME/bin/kubectl && export PATH=$PATH:$HOME/bin
+  770  echo 'export PATH=$PATH:$HOME/bin' >> ~/.bashrc
+  771  kubectl version --short --client
+  772  kubectl version --short
+  773  kubectl version --short --client
+  774  aws-iam-authenticator help
+  775  curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
+  776  sudo mv /tmp/eksctl /usr/local/bin
+  777  sudo apt install pass
+  778  cat sudo ~/.docker/config.json
+  779  cat ~/.docker/config.json
+  780  histor
+  781  history
+  782  history grep | rm
+  783  history |grep rm
+  784  git status
+  785  git add .
+  786  git commit -m "edited deployments"
+  787  git push -u origin main
+  788  git status
+  789  git add .
+  790  git commit -m "edited deployments"
+  791  git push -u origin main
+  792  git add .
+  793  git commit -m "edited frontend enviroment"
+  794  git push -u origin main
+  795  git add .
+  796  git commit -m "Added Required Screenshots by the instructor"
+  797  git push -u origin main
+  798  git status
+  799  git add
+  800  git add .
+  801  git commit -m "modified deployments"
+  802  git push origin main
+  803  git status
+  804  git commit -m "public api frontend"
+  805  git add .
+  806  git commit -m "public api frontend"
+  807  git push origin main
+  808  git status
+  809  git commit -m "Added Screenshorts"
+  810  git add .
+  811  git commit -m "Added Screenshorts"
+  812  git push origin main
+  813  eksctl create cluster --name udagram-lashie-cluster --region=us-east-1 --nodes-min=2 --nodes-max=3
+  814  eksctl delete cluster --region=us-east-1 --name=udagram-lashie-cluster
+  815  eksctl delete cluster --region=us-east-2 --name=udagram-lashie-cluster
+  816  eksctl create cluster --name udagram-lashie-cluster --region=us-east-2 --nodes-min=2 --nodes-max=3
+  817  eksctl delete cluster --region=us-east-2 --name=udagram-lashie-cluster
+  818  eksctl create cluster --name myCluster --region=us-east-2 --nodes-min=2 --nodes-max=3
+  819  kubectl get nodes
+  820  code ~/.profile
+  821  cat ~/.aws/credentials | tail -n 5 | head -n 2 | base64
+  822  ./deployments/runer.sh
+  823  sudo ./deployments/runer.sh
+  824  cd deployments/
+  825  ./runer.sh
+  826  sudo ./runer.sh
+  827  bash ./runer.sh
+  828  kubectl get deployments
+  829  kubectl expose deployment frontend --type=LoadBalancer --name=publicfrontend
+  830  kubectl expose deployment udagram-frontend --type=LoadBalancer --name=publicfrontend
+  831  kubectl expose deployment reverseproxy --type=LoadBalancer --name=publicreverseproxy
+  832  kubectl get services
+  833  kubectl get pod
+  834  kubectl get pods
+  835  kubectl get deployments
+  836  cd ..
+  837  git add .
+  838  git commit -m "Added deploments yml file"
+  839  git push origin main
+  840  kubectl get pods
+  841  kubectl describe pds
+  842  kubectl describe pods
+  843  bash ./deployments/runer.sh
+  844  kubectl get pods
+  845  kubectl get services
+  846  git add .
+  847  git commit
+  848  git commit -m ""
+  849  git commit -m "Modify deployments"
+  850  git push origin main
+  851  bash ./deployments/runer.sh
+  852  cd deployments/
+  853  bash ./runer.sh
+  854  kubectl get deployments
+  855  kubectl get services
+  856  kubectl get pods
+  857  kubectl get deployments
+  858  git add .
+  859  git commit -m "Modify deployments"
+  860  git push origin main
+  861  bash ./runer.sh
+  862  kubectl get deployments
+  863  kubectl get services
+  864  kubectl get pods
+  865  cd ..
+  866  cd udagram-frontend/
+  867  docker build . -t lashie/udagram-frontend
+  868  docker push lashie/udagram-frontend
+  869  docker login
+  870  docker push lashie/udagram-frontend
+  871  kubectl set image deployment udagram-frontend frontend=lashie/udagram-frontend
+  872  kubectl set image deployment udagram-frontend udagram-frontend=lashie/udagram-frontend
+  873  kubectl get pods
+  874  cd ..
+  875  cd udagram-as-a-microservice-app/
+  876  cd deployments/
+  877  bash ./runer.sh
+  878  kubectl get pods
+  879  bash ./runer.sh
+  880  kubectl get pods
+  881  eksctl delete cluster --region=us-east-2 --name=udagram-lashie-cluster
+  882  eksctl
+  883  eksctl delete cluster --region=us-east-2 --name=udagram-lashie-cluster
+  884  eksctl create cluster --name udagram-lashie-cluster --region=us-east-1 --nodes-min=2 --nodes-max=3
+  885  eksctl delete cluster --region=us-east-1 --name=udagram-lashie-cluster
+  886  eksctl create cluster --name udagram-lashie-cluster --region=us-east-2 --nodes-min=2 --nodes-max=3
+  887  kubectl get nodes
+  888  eksctl utils describe-stacks --region=us-east-2 --cluster=udagram-lashie-cluster
+  889  eksctl delete cluster --region=us-east-2 --name=udagram-lashie-cluster
+  890  eksctl create cluster --name myCluster --region=us-east-2 --nodes-min=2 --nodes-max=3
+  891  eksctl delete cluster --region=us-east-2 --name=myCluster
+  892  eksctl create cluster --name udagram-lashie-cluster --region=us-east-2 --nodes-min=2 --nodes-max=3
+  893  kubectl get deployments
+  894  4
+  895  kubectl get deployments
+  896  kubectl get pods
+  897  bash ./runer.sh
+  898  kubectl get deployments
+  899  kubectl get services
+  900  kubectl expose deployment udagram-frontend --type=LoadBalancer --name=publicfrontend
+  901  kubectl expose deployment reverseproxy --type=LoadBalancer --name=publicreverseproxy
+  902  kubectl get services
+  903  kubectl get pods
+  904  kubectl get services
+  905  kubectl get pods
+  906  kubectl describe backend-feed-576497c78c-dsr6c
+  907  kubectl describe pod backend-feed-576497c78c-dsr6c
+  908  kubectl get pods
+  909  kubectl get pods
+  910  bash ./runer.sh
+  911  kubectl get pods
+  912  kubectl delete pod reverseproxy-d94bc67d-5shw2
+  913  kubectl get pods
+  914  kubectl delete all --all
+  915  kubectl get pods
+  916  bash ./runer.sh
+  917  kubectl get pods
+  918  kubectl delete all --all
+  919  kubectl get pods
+  920  bash ./runer.sh
+  921  kubectl get pods
+  922  kubectl get service
+  923  kubectl expose deployment udagram-frontend --type=LoadBalancer --name=publicfrontend
+  924  kubectl expose deployment udagram-frontend --type=LoadBalancer --name=publicreverseproxy
+  925  kubectl expose deployment reverseproxyx --type=LoadBalancer --name=publicreverseproxy
+  926  kubectl expose deployment reverseproxy --type=LoadBalancer --name=publicreverseproxy
+  927  kubectl delete service publicreverseproxy
+  928  kubectl expose deployment reverseproxy --type=LoadBalancer --name=publicreverseproxy
+  929  kubectl get services
+  930  kubectl get pods
+  931  kubectl get deployments
+  932  kubectl get services
+  933  kubectl get deployments
+  934  kubectl get services
+  935  kubectl get deployments
+  936  bash ./runer.sh
+  937  kubectl get deployments
+  938  kubectl get pods
+  939  bash ./runer.sh
+  940  kubectl get pods
+  941  kubectl get deployments
+  942  bash ./set_hpa.sh
+  943  cd udagram-frontend/
+  944  docker login
+  945  docker build . -t lashie/udagram-frontend
+  946  docker push lashie/udagram-frontend
+  947  cd ..
+  948  kubectl get pods
+  949  kubectl get services
+  950  kubectl describe services
+  951  kubectl describe hpa
+  952  kuberctl get pods
+  953  kubectl get pods
+  954  kubectl logs backend-user-6dd8d9dc9d-4j744
+  955  kubectl logs backend-feed-576497c78c-zhvfd
+  956  kuberctl get deployments
+  957  kubectl get deployments
+  958  kubectl autoscale deployment backend-user --cpu-percent=70 --min=3 --max=5
+  959  kubectl autoscale deployment backend-feed --cpu-percent=70 --min=3 --max=5
+  960  kubectl autoscale deployment udagram-frontend --cpu-percent=70 --min=3 --max=5
+  961  kubeclt describe hpa
+  962  kubectl describe hpa
+  963  kubectl logs backend-feed-576497c78c-zhvfd
+  964  kubectl logs backend-user-6dd8d9dc9d-4j744
+  965  kubeclt describe hpa
+  966  kubectl describe hpa
+  967  kubectl autoscale deployment backend-user --cpu-percent=70 --min=3 --max=5
+  968  kubectl autoscale deployment backend-feed --cpu-percent=70 --min=3 --max=5
+  969  kubectl autoscale deployment udagram-frontend --cpu-percent=70 --min=3 --max=5
+  970  kubectl get deployments/
+  971  kubectl get deployments
+  972  kubectl autoscale deployment reverseproxy --cpu-percent=70 --min=3 --max=5
+  973  kubectl desribe hpa
+  974  kubectl describe hpa
+  975  kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
+  976  kubectl get deployment metrics-server -n kube-system
+  977  kubectl describe hpa
+  978  kubectl autoscale deployment reverseproxy --cpu-percent=70 --min=1 --max=2
+  979  kubectl autoscale deployment reverseproxy --cpu-percent=70 --min=1 --max=5
+  980  kubectl get hpa
+  981  kubectl delete hpa backend-fee
+  982  kubectl delete hpa backend-feed
+  983  kubectl delete hpa backend-user
+  984  kubectl delete hpa reverseproxy
+  985  kubectl delete hpa udagram-frontend
+  986  kubectl get hpa
+  987  kubectl describe hpa
+  988  kubectl get hpa
+  989  history > terminal_history.txt
