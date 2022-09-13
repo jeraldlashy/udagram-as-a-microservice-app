@@ -1,8 +1,8 @@
-kubectl delete pod backend-feed-58bf4b4f94-zfvgr
-kubectl delete pod udagram-frontend-5b77cd8cbc-gcsmh
+kubectl delete pod udagram-frontend-5b77cd8cbc-8sgk7
+kubectl delete pod backend-feed-576497c78c-n25xc
 kubectl delete pod reverseproxy-d94bc67d-pw65s
-kubectl delete pod backend-feed-f544846c7-q5xsv
-kubectl delete pod reverseproxy-6f67d46dd7-h49qb
+kubectl delete pod reverseproxy-d94bc67d-vfbws
+kubectl delete pod udagram-frontend-5b77cd8cbc-8sgk7
 kubectl delete pod backend-user-9c9d47d75-p89bg
 
 kubectl delete pod udagram-frontend-*
