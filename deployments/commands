@@ -1,0 +1,30 @@
+
+kubectl delete all --all
+
+
+# Check the deployment names and their pod status
+kubectl get deployments
+# Create a Service object that exposes the frontend deployment
+# The command below will ceates an external load balancer and assigns a fixed, external IP to the Service.
+# Repeat the process for the *reverseproxy* deployment.
+# Check name, ClusterIP, and External IP of all deployments
+kubectl get services
+kubectl get pods # It should show the STATUS as Running
+
+
+
+
+# Run these commands from the /udagram-frontend directory
+docker build . -t [Dockerhub-username]/udagram-frontend:v6
+docker push [Dockerhub-username]/udagram-frontend:v6
+
+# Run these commands from the /udagram-deployment directory
+# Rolling update the containers of "frontend" deployment
+kubectl set image deployment frontend frontend=[Dockerhub-username]/udagram-frontend:v6
+
+
+
+
+
+
+
